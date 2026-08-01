@@ -1,0 +1,152 @@
+diff --git a/1.41/_locales/ja/messages.json b/1.42/_locales/ja/messages.json
+index 0f8032c..a67c51b 100644
+--- a/1.41/_locales/ja/messages.json
++++ b/1.42/_locales/ja/messages.json
+@@ -96,14 +96,14 @@
+             "deleteFailed": { "message": "削除に失敗しました", "description": "削除エラーです。" },
+             "tooltipHttpOnlyWarning": { "message": "HttpOnly Cookieはページスクリプトから編集できませんが、本拡張機能はブラウザのCookie APIを使用して削除できます。", "description": "HttpOnlyの説明です。" },
+             "sessionStorageTitle": { "message": "セッションストレージ", "description": "セッションストレージタブです。" },
+-            "indexedDBTitle": { "message": "IndexedDB", "description": "IndexedDBタブです。" },
++            "indexedDBTitle": { "message": "インデックス付きデータベース", "description": "インデックス付きデータベースのタブです。" },
+             "cacheStorageTitle": { "message": "キャッシュストレージ", "description": "キャッシュストレージタブです。" },
+             "serviceWorkersTitle": { "message": "サービスワーカー", "description": "サービスワーカータブです。" },
+             "fileSystemTitle": { "message": "ファイルシステム", "description": "オリジン専用ファイルシステムタブです。" },
+             "storageOverviewTitle": { "message": "概要", "description": "ストレージ概要タブです。" },
+             "errorsTitle": { "message": "エラー", "description": "収集エラータブです。" },
+             "noSessionStorage": { "message": "セッションストレージの項目はありません。", "description": "空のセッションストレージメッセージです。" },
+-            "noIndexedDB": { "message": "IndexedDBデータベースはありません。", "description": "空のIndexedDBメッセージです。" },
++            "noIndexedDB": { "message": "インデックス付きデータベースはありません。", "description": "データベースが空の場合のメッセージです。" },
+             "noCacheStorage": { "message": "キャッシュストレージの項目はありません。", "description": "空のキャッシュメッセージです。" },
+             "noServiceWorkers": { "message": "サービスワーカーはありません。", "description": "空のサービスワーカーメッセージです。" },
+             "noFileSystem": { "message": "オリジン専用ファイルはありません。", "description": "空のファイルシステムメッセージです。" },
+@@ -111,7 +111,7 @@
+             "noErrors": { "message": "データ収集エラーはありません。", "description": "エラーなしメッセージです。" },
+             "confirmDeleteSection": { "message": "このタブに表示された$1のデータをすべて削除しますか？この操作は元に戻せません。", "description": "セクション削除の確認です。" },
+             "deleteSiteDataButton": { "message": "サイトデータをすべて削除", "description": "サイトデータ一括削除ボタンです。" },
+-            "confirmDeleteSiteData": { "message": "このサイトのCookie、Webストレージ、IndexedDB、キャッシュ、サービスワーカー、専用ファイルをすべて削除しますか？ページが再読み込みされ、この操作は元に戻せません。", "description": "サイトデータ一括削除の確認です。" },
++            "confirmDeleteSiteData": { "message": "このサイトのCookie、Webストレージ、インデックス付きデータベース、キャッシュ、サービスワーカー、専用ファイルをすべて削除しますか？ページが再読み込みされ、この操作は元に戻せません。", "description": "サイトデータ一括削除の確認です。" },
+             "siteDataDeleted": { "message": "削除可能なサイトデータをすべて削除しました。ページを再読み込みします。", "description": "一括削除完了メッセージです。" },
+             "saveFailed": { "message": "保存に失敗しました", "description": "保存エラーです。" }
+           }
+diff --git a/1.41/_locales/ko/messages.json b/1.42/_locales/ko/messages.json
+index 8cb7cc6..c91c9aa 100644
+--- a/1.41/_locales/ko/messages.json
++++ b/1.42/_locales/ko/messages.json
+@@ -111,14 +111,14 @@
+     "description": "HttpOnly 안내입니다."
+   },
+   "sessionStorageTitle": { "message": "세션 스토리지", "description": "세션 스토리지 탭입니다." },
+-  "indexedDBTitle": { "message": "IndexedDB", "description": "IndexedDB 탭입니다." },
++  "indexedDBTitle": { "message": "인덱스 데이터베이스", "description": "인덱스 데이터베이스 탭입니다." },
+   "cacheStorageTitle": { "message": "캐시 스토리지", "description": "캐시 스토리지 탭입니다." },
+   "serviceWorkersTitle": { "message": "서비스 워커", "description": "서비스 워커 탭입니다." },
+   "fileSystemTitle": { "message": "파일 시스템", "description": "Origin 전용 파일 시스템 탭입니다." },
+   "storageOverviewTitle": { "message": "저장공간 개요", "description": "저장공간 개요 탭입니다." },
+   "errorsTitle": { "message": "오류", "description": "수집 오류 탭입니다." },
+   "noSessionStorage": { "message": "세션 스토리지 항목이 없습니다.", "description": "빈 세션 스토리지 메시지입니다." },
+-  "noIndexedDB": { "message": "IndexedDB 데이터베이스가 없습니다.", "description": "빈 IndexedDB 메시지입니다." },
++  "noIndexedDB": { "message": "인덱스 데이터베이스가 없습니다.", "description": "빈 인덱스 데이터베이스 메시지입니다." },
+   "noCacheStorage": { "message": "캐시 스토리지 항목이 없습니다.", "description": "빈 캐시 스토리지 메시지입니다." },
+   "noServiceWorkers": { "message": "서비스 워커가 없습니다.", "description": "빈 서비스 워커 메시지입니다." },
+   "noFileSystem": { "message": "Origin 전용 파일이 없습니다.", "description": "빈 파일 시스템 메시지입니다." },
+@@ -133,7 +133,7 @@
+   },
+   "deleteSiteDataButton": { "message": "사이트 데이터 전체 삭제", "description": "사이트 데이터 전체삭제 버튼입니다." },
+   "confirmDeleteSiteData": {
+-    "message": "이 사이트의 쿠키, 웹 저장소, IndexedDB, 캐시, 서비스 워커와 전용 파일을 모두 삭제할까요? 페이지가 새로고침되며 되돌릴 수 없습니다.",
++    "message": "이 사이트의 쿠키, 웹 저장소, 인덱스 데이터베이스, 캐시, 서비스 워커와 전용 파일을 모두 삭제할까요? 페이지가 새로고침되며 되돌릴 수 없습니다.",
+     "description": "사이트 데이터 전체삭제 확인문입니다."
+   },
+   "siteDataDeleted": {
+diff --git a/1.41/_locales/zh_CN/messages.json b/1.42/_locales/zh_CN/messages.json
+index d7b0356..417db0c 100644
+--- a/1.41/_locales/zh_CN/messages.json
++++ b/1.42/_locales/zh_CN/messages.json
+@@ -1,10 +1,10 @@
+ {
+   "extName": {
+-    "message": "Cookie 存储管理器",
++    "message": "网站识别数据存储管理器",
+     "description": "The name of the extension."
+   },
+   "extDescription": {
+-    "message": "一个简单的当前页面 Cookie 和本地存储管理器。",
++    "message": "用于管理当前页面网站识别数据和本地存储的简易工具。",
+     "description": "The description of the extension."
+   },
+   "sponsorLink": {
+@@ -16,7 +16,7 @@
+     "description": "Placeholder for the search box."
+   },
+   "cookiesTitle": {
+-    "message": "Cookie",
++    "message": "网站识别数据",
+     "description": "Title for the cookies section."
+   },
+   "localStorageTitle": {
+@@ -40,7 +40,7 @@
+     "description": "Error message when storage access is denied."
+   },
+   "noCookies": {
+-    "message": "未找到 Cookie。",
++    "message": "未找到网站识别数据。",
+     "description": "Message when no cookies are found."
+   },
+   "errorLocalStorage": {
+@@ -84,34 +84,34 @@
+             "copiedToast": { "message": "已复制到剪贴板", "description": "复制完成提示。" },
+             "savedToast": { "message": "已保存为文件", "description": "导出完成提示。" },
+             "exportAllButtonLabel": { "message": "全部导出", "description": "全部导出按钮。" },
+-            "exportAllCookiesTitle": { "message": "导出所有 Cookie", "description": "Cookie 导出提示。" },
++            "exportAllCookiesTitle": { "message": "导出所有网站识别数据", "description": "网站识别数据导出提示。" },
+             "exportAllLSTitle": { "message": "导出所有本地存储数据", "description": "本地存储导出提示。" },
+             "deleteAllButtonLabel": { "message": "全部删除", "description": "全部删除按钮。" },
+-            "deleteAllCookiesTitle": { "message": "删除此网站显示的所有 Cookie", "description": "Cookie 全部删除提示。" },
++            "deleteAllCookiesTitle": { "message": "删除此网站显示的所有识别数据", "description": "网站识别数据全部删除提示。" },
+             "deleteAllLSTitle": { "message": "清除此来源的本地存储", "description": "本地存储全部删除提示。" },
+-            "confirmDeleteAllCookies": { "message": "要删除显示的所有 Cookie 吗？此操作无法撤销。", "description": "Cookie 删除确认。" },
++            "confirmDeleteAllCookies": { "message": "要删除显示的所有网站识别数据吗？此操作无法撤销。", "description": "网站识别数据删除确认。" },
+             "confirmDeleteAllLS": { "message": "要清除此来源的所有本地存储数据吗？此操作无法撤销。", "description": "本地存储清除确认。" },
+             "deleteAllComplete": { "message": "已删除所有项目", "description": "全部删除完成提示。" },
+             "deleteAllPartial": { "message": "有 $1 个项目无法删除。", "description": "部分删除失败提示。" },
+             "deleteFailed": { "message": "删除失败", "description": "删除错误提示。" },
+-            "tooltipHttpOnlyWarning": { "message": "页面脚本无法编辑 HttpOnly Cookie，但本扩展可以通过浏览器 Cookie API 删除它们。", "description": "HttpOnly 说明。" },
++            "tooltipHttpOnlyWarning": { "message": "页面脚本无法编辑仅限 HTTP 的网站识别数据，但本扩展可以通过浏览器接口删除它们。", "description": "仅限 HTTP 属性说明。" },
+             "sessionStorageTitle": { "message": "会话存储", "description": "会话存储标签页。" },
+-            "indexedDBTitle": { "message": "IndexedDB", "description": "IndexedDB 标签页。" },
++            "indexedDBTitle": { "message": "索引数据库", "description": "索引数据库标签页。" },
+             "cacheStorageTitle": { "message": "缓存存储", "description": "缓存存储标签页。" },
+-            "serviceWorkersTitle": { "message": "Service Worker", "description": "Service Worker 标签页。" },
++            "serviceWorkersTitle": { "message": "服务工作线程", "description": "服务工作线程标签页。" },
+             "fileSystemTitle": { "message": "文件系统", "description": "来源专用文件系统标签页。" },
+             "storageOverviewTitle": { "message": "概览", "description": "存储概览标签页。" },
+             "errorsTitle": { "message": "错误", "description": "数据收集错误标签页。" },
+             "noSessionStorage": { "message": "未找到会话存储项目。", "description": "会话存储为空时的提示。" },
+-            "noIndexedDB": { "message": "未找到 IndexedDB 数据库。", "description": "IndexedDB 为空时的提示。" },
++            "noIndexedDB": { "message": "未找到索引数据库。", "description": "索引数据库为空时的提示。" },
+             "noCacheStorage": { "message": "未找到缓存存储项目。", "description": "缓存存储为空时的提示。" },
+-            "noServiceWorkers": { "message": "未找到 Service Worker。", "description": "Service Worker 为空时的提示。" },
++            "noServiceWorkers": { "message": "未找到服务工作线程。", "description": "服务工作线程为空时的提示。" },
+             "noFileSystem": { "message": "未找到来源专用文件。", "description": "文件系统为空时的提示。" },
+             "noStorageOverview": { "message": "无法获取存储使用信息。", "description": "存储概览不可用时的提示。" },
+             "noErrors": { "message": "没有数据收集错误。", "description": "无错误提示。" },
+             "confirmDeleteSection": { "message": "要删除此标签页中显示的所有“$1”数据吗？此操作无法撤销。", "description": "分区清除确认。" },
+             "deleteSiteDataButton": { "message": "删除所有网站数据", "description": "网站数据全部删除按钮。" },
+-            "confirmDeleteSiteData": { "message": "要删除此网站的 Cookie、Web 存储、IndexedDB、缓存、Service Worker 和专用文件吗？页面将重新加载，且此操作无法撤销。", "description": "网站数据全部删除确认。" },
++            "confirmDeleteSiteData": { "message": "要删除此网站的识别数据、网页存储、索引数据库、缓存、服务工作线程和专用文件吗？页面将重新加载，且此操作无法撤销。", "description": "网站数据全部删除确认。" },
+             "siteDataDeleted": { "message": "已删除所有可用的网站数据。页面正在重新加载。", "description": "全部删除完成提示。" },
+             "saveFailed": { "message": "保存失败", "description": "保存错误提示。" }
+           }
+diff --git a/1.41/manifest.json b/1.42/manifest.json
+index 8f7ff1b..5db6f28 100644
+--- a/1.41/manifest.json
++++ b/1.42/manifest.json
+@@ -1,7 +1,7 @@
+ {
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+-  "version": "1.41",
++  "version": "1.42",
+   "description": "__MSG_extDescription__",
+   "default_locale": "en",
+   "author": "JellyKingStudio",

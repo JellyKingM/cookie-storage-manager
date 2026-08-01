@@ -1,0 +1,117 @@
+{
+  "extName": {
+    "message": "Cookie Storage Manager",
+    "description": "The name of the extension."
+  },
+  "extDescription": {
+    "message": "A simple manager for cookies and local storage on the current page.",
+    "description": "The description of the extension."
+  },
+  "sponsorLink": {
+    "message": "Support Me",
+    "description": "Sponsor link text."
+  },
+  "searchPlaceholder": {
+    "message": "Search by key or value...",
+    "description": "Placeholder for the search box."
+  },
+  "cookiesTitle": {
+    "message": "Cookies",
+    "description": "Title for the cookies section."
+  },
+  "localStorageTitle": {
+    "message": "Local Storage",
+    "description": "Title for the local storage section."
+  },
+  "footerText": {
+    "message": "Made by JellyKingStudio",
+    "description": "Footer text."
+  },
+  "errorTabId": {
+    "message": "Tab ID not found. Please close this window and click the extension icon again.",
+    "description": "Error message when tab ID is not found."
+  },
+  "errorTabInfo": {
+    "message": "Could not get tab information. The original tab may have been closed.",
+    "description": "Error message when tab info cannot be retrieved."
+  },
+  "errorAccess": {
+    "message": "Cannot access storage for this page (e.g., system pages or new tabs).",
+    "description": "Error message when storage access is denied."
+  },
+  "noCookies": {
+    "message": "No cookies found.",
+    "description": "Message when no cookies are found."
+  },
+  "errorLocalStorage": {
+    "message": "Could not access local storage.",
+    "description": "Error message when local storage is inaccessible."
+  },
+  "noLocalStorage": {
+    "message": "No local storage items found.",
+    "description": "Message when no local storage items are found."
+  },
+  "editButton": {
+    "message": "Edit",
+    "description": "Title for the edit button."
+  },
+  "saveButton": {
+    "message": "Save",
+    "description": "Title for the save button."
+  },
+  "deleteButton": {
+    "message": "Delete",
+    "description": "Title for the delete button."
+  },
+  "fetchedAt": {
+    "message": "Fetched at:",
+    "description": "Prefix for the time when data was fetched."
+  },
+  "showMore": {
+    "message": "Show more",
+    "description": "Button text to expand a collapsed text area."
+  },
+            "showLess": {
+              "message": "Show less",
+              "description": "Button text to collapse an expanded text area."
+            },
+            "privacyNotice": {
+              "message": " | This extension never transmits any data externally.",
+              "description": "Privacy notice text."
+            },
+            "copyButtonLabel": { "message": "Copy", "description": "Copy item button." },
+            "saveButtonLabel": { "message": "Export", "description": "Export item button." },
+            "copiedToast": { "message": "Copied to clipboard", "description": "Copy completion message." },
+            "savedToast": { "message": "Saved as file", "description": "Export completion message." },
+            "exportAllButtonLabel": { "message": "Export all", "description": "Export all button." },
+            "exportAllCookiesTitle": { "message": "Export all cookies", "description": "Cookie export tooltip." },
+            "exportAllLSTitle": { "message": "Export all local storage", "description": "Local storage export tooltip." },
+            "deleteAllButtonLabel": { "message": "Delete all", "description": "Delete all button." },
+            "deleteAllCookiesTitle": { "message": "Delete every cookie listed for this site", "description": "Cookie delete-all tooltip." },
+            "deleteAllLSTitle": { "message": "Clear local storage for this origin", "description": "Local storage delete-all tooltip." },
+            "confirmDeleteAllCookies": { "message": "Delete all listed cookies? This cannot be undone.", "description": "Cookie delete confirmation." },
+            "confirmDeleteAllLS": { "message": "Clear all local storage for this origin? This cannot be undone.", "description": "Local storage clear confirmation." },
+            "deleteAllComplete": { "message": "All items were deleted", "description": "Bulk deletion completion message." },
+            "deleteAllPartial": { "message": "$1 item(s) could not be deleted.", "description": "Partial bulk deletion error." },
+            "deleteFailed": { "message": "Deletion failed", "description": "Deletion error prefix." },
+            "tooltipHttpOnlyWarning": { "message": "HttpOnly cookies cannot be edited by page scripts, but this extension can delete them using the browser cookie API.", "description": "HttpOnly information." },
+            "sessionStorageTitle": { "message": "Session Storage", "description": "Session storage tab." },
+            "indexedDBTitle": { "message": "IndexedDB", "description": "IndexedDB tab." },
+            "cacheStorageTitle": { "message": "Cache Storage", "description": "Cache Storage tab." },
+            "serviceWorkersTitle": { "message": "Service Workers", "description": "Service workers tab." },
+            "fileSystemTitle": { "message": "File System", "description": "Origin private file system tab." },
+            "storageOverviewTitle": { "message": "Overview", "description": "Storage overview tab." },
+            "errorsTitle": { "message": "Errors", "description": "Collection errors tab." },
+            "noSessionStorage": { "message": "No session storage items found.", "description": "Empty session storage message." },
+            "noIndexedDB": { "message": "No IndexedDB databases found.", "description": "Empty IndexedDB message." },
+            "noCacheStorage": { "message": "No Cache Storage entries found.", "description": "Empty Cache Storage message." },
+            "noServiceWorkers": { "message": "No service workers found.", "description": "Empty service worker message." },
+            "noFileSystem": { "message": "No origin private files found.", "description": "Empty file system message." },
+            "noStorageOverview": { "message": "Storage usage information is unavailable.", "description": "Empty overview message." },
+            "noErrors": { "message": "No collection errors.", "description": "No errors message." },
+            "confirmDeleteSection": { "message": "Delete all $1 data shown in this tab? This cannot be undone.", "description": "Section clear confirmation." },
+            "deleteSiteDataButton": { "message": "Delete all site data", "description": "Full site data deletion button." },
+            "confirmDeleteSiteData": { "message": "Delete cookies, web storage, IndexedDB, caches, service workers, and private files for this site? The page will reload and this cannot be undone.", "description": "Full site deletion confirmation." },
+            "siteDataDeleted": { "message": "All available site data was deleted. The page is reloading.", "description": "Full deletion completion message." },
+            "saveFailed": { "message": "Save failed", "description": "Save error prefix." }
+          }

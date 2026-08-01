@@ -1,0 +1,117 @@
+{
+  "extName": {
+    "message": "Administrador de Almacenamiento de Cookies",
+    "description": "The name of the extension."
+  },
+  "extDescription": {
+    "message": "Un administrador simple para cookies y almacenamiento local en la página actual.",
+    "description": "The description of the extension."
+  },
+  "sponsorLink": {
+    "message": "Apóyame",
+    "description": "Sponsor link text."
+  },
+  "searchPlaceholder": {
+    "message": "Buscar por clave o valor...",
+    "description": "Placeholder for the search box."
+  },
+  "cookiesTitle": {
+    "message": "Cookies",
+    "description": "Title for the cookies section."
+  },
+  "localStorageTitle": {
+    "message": "Almacenamiento Local",
+    "description": "Title for the local storage section."
+  },
+  "footerText": {
+    "message": "Hecho por JellyKingStudio",
+    "description": "Footer text."
+  },
+  "errorTabId": {
+    "message": "ID de pestaña no encontrado. Cierre esta ventana y vuelva a hacer clic en el icono de la extensión.",
+    "description": "Error message when tab ID is not found."
+  },
+  "errorTabInfo": {
+    "message": "No se pudo obtener la información de la pestaña. Es posible que la pestaña original se haya cerrado.",
+    "description": "Error message when tab info cannot be retrieved."
+  },
+  "errorAccess": {
+    "message": "No se puede acceder al almacenamiento de esta página (por ejemplo, páginas del sistema o pestañas nuevas).",
+    "description": "Error message when storage access is denied."
+  },
+  "noCookies": {
+    "message": "No se encontraron cookies.",
+    "description": "Message when no cookies are found."
+  },
+  "errorLocalStorage": {
+    "message": "No se pudo acceder al almacenamiento local.",
+    "description": "Error message when local storage is inaccessible."
+  },
+  "noLocalStorage": {
+    "message": "No se encontraron elementos de almacenamiento local.",
+    "description": "Message when no local storage items are found."
+  },
+  "editButton": {
+    "message": "Editar",
+    "description": "Title for the edit button."
+  },
+  "saveButton": {
+    "message": "Guardar",
+    "description": "Title for the save button."
+  },
+  "deleteButton": {
+    "message": "Eliminar",
+    "description": "Title for the delete button."
+  },
+  "fetchedAt": {
+    "message": "Obtenido a las:",
+    "description": "Prefix for the time when data was fetched."
+  },
+  "showMore": {
+    "message": "Mostrar más",
+    "description": "Button text to expand a collapsed text area."
+  },
+            "showLess": {
+              "message": "Mostrar menos",
+              "description": "Button text to collapse an expanded text area."
+            },
+            "privacyNotice": {
+              "message": " | Esta extensión no envía ningún dato al exterior.",
+              "description": "Privacy notice text."
+            },
+            "copyButtonLabel": { "message": "Copiar", "description": "Botón para copiar." },
+            "saveButtonLabel": { "message": "Exportar", "description": "Botón para exportar." },
+            "copiedToast": { "message": "Copiado al portapapeles", "description": "Mensaje de copia completada." },
+            "savedToast": { "message": "Guardado como archivo", "description": "Mensaje de exportación completada." },
+            "exportAllButtonLabel": { "message": "Exportar todo", "description": "Botón para exportar todo." },
+            "exportAllCookiesTitle": { "message": "Exportar todas las cookies", "description": "Ayuda para exportar cookies." },
+            "exportAllLSTitle": { "message": "Exportar todo el almacenamiento local", "description": "Ayuda para exportar almacenamiento local." },
+            "deleteAllButtonLabel": { "message": "Eliminar todo", "description": "Botón para eliminar todo." },
+            "deleteAllCookiesTitle": { "message": "Eliminar todas las cookies mostradas de este sitio", "description": "Ayuda para eliminar cookies." },
+            "deleteAllLSTitle": { "message": "Borrar el almacenamiento local de este origen", "description": "Ayuda para borrar almacenamiento local." },
+            "confirmDeleteAllCookies": { "message": "¿Eliminar todas las cookies mostradas? Esta acción no se puede deshacer.", "description": "Confirmación para eliminar cookies." },
+            "confirmDeleteAllLS": { "message": "¿Borrar todo el almacenamiento local de este origen? Esta acción no se puede deshacer.", "description": "Confirmación para borrar almacenamiento local." },
+            "deleteAllComplete": { "message": "Se eliminaron todos los elementos", "description": "Mensaje de eliminación completada." },
+            "deleteAllPartial": { "message": "No se pudieron eliminar $1 elemento(s).", "description": "Error de eliminación parcial." },
+            "deleteFailed": { "message": "Error al eliminar", "description": "Prefijo de error de eliminación." },
+            "tooltipHttpOnlyWarning": { "message": "Los scripts de la página no pueden editar las cookies HttpOnly, pero esta extensión puede eliminarlas mediante la API de cookies del navegador.", "description": "Información sobre HttpOnly." },
+            "sessionStorageTitle": { "message": "Almacenamiento de sesión", "description": "Pestaña de almacenamiento de sesión." },
+            "indexedDBTitle": { "message": "IndexedDB", "description": "Pestaña de IndexedDB." },
+            "cacheStorageTitle": { "message": "Almacenamiento de caché", "description": "Pestaña de almacenamiento de caché." },
+            "serviceWorkersTitle": { "message": "Service Workers", "description": "Pestaña de Service Workers." },
+            "fileSystemTitle": { "message": "Sistema de archivos", "description": "Pestaña del sistema de archivos privado." },
+            "storageOverviewTitle": { "message": "Resumen", "description": "Pestaña de resumen del almacenamiento." },
+            "errorsTitle": { "message": "Errores", "description": "Pestaña de errores." },
+            "noSessionStorage": { "message": "No se encontraron elementos en el almacenamiento de sesión.", "description": "Mensaje de almacenamiento de sesión vacío." },
+            "noIndexedDB": { "message": "No se encontraron bases de datos IndexedDB.", "description": "Mensaje de IndexedDB vacío." },
+            "noCacheStorage": { "message": "No se encontraron elementos en el almacenamiento de caché.", "description": "Mensaje de caché vacía." },
+            "noServiceWorkers": { "message": "No se encontraron Service Workers.", "description": "Mensaje de Service Workers vacío." },
+            "noFileSystem": { "message": "No se encontraron archivos privados del origen.", "description": "Mensaje de sistema de archivos vacío." },
+            "noStorageOverview": { "message": "La información de uso del almacenamiento no está disponible.", "description": "Mensaje de resumen vacío." },
+            "noErrors": { "message": "No hay errores de recopilación.", "description": "Mensaje sin errores." },
+            "confirmDeleteSection": { "message": "¿Eliminar todos los datos de $1 mostrados en esta pestaña? Esta acción no se puede deshacer.", "description": "Confirmación para borrar una sección." },
+            "deleteSiteDataButton": { "message": "Eliminar todos los datos del sitio", "description": "Botón para eliminar todos los datos del sitio." },
+            "confirmDeleteSiteData": { "message": "¿Eliminar las cookies, el almacenamiento web, IndexedDB, las cachés, los Service Workers y los archivos privados de este sitio? La página se recargará y esta acción no se puede deshacer.", "description": "Confirmación para eliminar todos los datos del sitio." },
+            "siteDataDeleted": { "message": "Se eliminaron todos los datos disponibles del sitio. La página se está recargando.", "description": "Mensaje de eliminación completa." },
+            "saveFailed": { "message": "Error al guardar", "description": "Prefijo de error al guardar." }
+          }
