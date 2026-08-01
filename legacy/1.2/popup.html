@@ -35,15 +35,16 @@
 
     <main>
         <div id="notification-banner"></div>
-        <div class="storage-workspace">
-            <div id="storage-tabs" class="storage-tabs" role="tablist" aria-label="Site data types"></div>
-            <section class="tab-panel" role="tabpanel">
-                <div class="panel-toolbar">
-                    <h2 id="active-section-title"></h2>
-                    <div id="section-actions"></div>
-                </div>
-                <div id="active-data-list" class="data-list"></div>
-            </section>
+        <div class="list-wrapper">
+            <div class="list-section" id="cookies-section">
+                <h2 data-i18n="cookiesTitle"></h2>
+                <div id="cookies-list" class="data-list"></div>
+            </div>
+            <div id="resizer"></div> <!-- Draggable resizer -->
+            <div class="list-section" id="localstorage-section">
+                <h2 data-i18n="localStorageTitle"></h2>
+                <div id="localstorage-list" class="data-list"></div>
+            </div>
         </div>
       <div id="export-overlay">
       <div class="panel">
@@ -58,10 +59,7 @@
         <div class="footer-left">
                             <span data-i18n="footerText"></span>
                             <span class="privacy-notice" data-i18n="privacyNotice"></span>        </div>
-        <div class="footer-actions">
-            <button id="delete-site-data-btn" class="delete-site-data-btn" data-i18n="deleteSiteDataButton"></button>
-            <div class="version-info" id="version-display"></div>
-        </div>
+        <div class="version-info" id="version-display"></div>
     </footer>
 
     <script src="popup.js"></script>

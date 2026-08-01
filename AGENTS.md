@@ -66,7 +66,7 @@ C:\ProgramData\chocolatey\bin\choco.exe
 C:\Program Files\GitHub CLI\gh.exe
 ```
 
-- 현재 `gh`는 GitHub에 로그인되어 있지 않다. 저장소 자동 생성과 푸시를 하려면 최초 1회 인증이 필요하다.
+- 현재 `gh`는 GitHub의 `JellyKingM` 계정으로 인증되어 있으며 이 프로젝트의 `origin`은 공개 저장소 `JellyKingM/cookie-storage-manager`이다.
 
 ## Git 자동 설치 가능 여부
 

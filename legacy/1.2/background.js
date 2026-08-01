@@ -9,18 +9,7 @@ const setTabWindowMap = async (map) => await chrome.storage.session.set({ [TAB_W
 async function storeErrorForTab(tabId, errorCode, errorMessage) {
     const errorPopupData = {
         cookies: [],
-        siteData: {
-            localStorage: [],
-            sessionStorage: [],
-            indexedDB: [],
-            cacheStorage: [],
-            serviceWorkers: [],
-            fileSystem: [],
-            storageOverview: [],
-            errors: [{ name: errorCode, value: errorMessage }],
-            __error: errorMessage,
-            __errorCode: errorCode
-        }
+        localStorage: { __error: errorMessage, __errorCode: errorCode }
     };
     await chrome.storage.session.set({ [`${DATA_FOR_TAB_KEY_PREFIX}${tabId}`]: errorPopupData });
 }
@@ -28,107 +17,34 @@ async function storeErrorForTab(tabId, errorCode, errorMessage) {
 // --- Data Fetching Helper ---
 async function fetchDataForTab(tab) {
     try {
-        const [cookies, siteDataResult] = await Promise.all([
+        const [cookies, localStorageResult] = await Promise.all([
             chrome.cookies.getAll({ url: tab.url }),
             chrome.scripting.executeScript({
                 target: { tabId: tab.id },
-                func: async () => {
-                    const data = {
-                        localStorage: [],
-                        sessionStorage: [],
-                        indexedDB: [],
-                        cacheStorage: [],
-                        serviceWorkers: [],
-                        fileSystem: [],
-                        storageOverview: [],
-                        errors: []
-                    };
-                    const recordError = (area, error) => data.errors.push({ name: area, value: String(error) });
-
+                func: () => {
                     try {
+                        const data = {};
                         for (let i = 0; i < localStorage.length; i++) {
-                            const name = localStorage.key(i);
-                            data.localStorage.push({ name, value: localStorage.getItem(name) });
+                            const k = localStorage.key(i);
+                            data[k] = localStorage.getItem(k);
                         }
-                    } catch (error) { recordError('Local Storage', error); }
-
-                    try {
-                        for (let i = 0; i < sessionStorage.length; i++) {
-                            const name = sessionStorage.key(i);
-                            data.sessionStorage.push({ name, value: sessionStorage.getItem(name) });
-                        }
-                    } catch (error) { recordError('Session Storage', error); }
-
-                    try {
-                        if (typeof indexedDB.databases === 'function') {
-                            const databases = await indexedDB.databases();
-                            data.indexedDB = databases.filter(db => db.name).map(db => ({
-                                name: db.name,
-                                value: `Version ${db.version ?? '?'}`,
-                                version: db.version
-                            }));
-                        } else {
-                            recordError('IndexedDB', 'Database enumeration is not supported by this browser.');
-                        }
-                    } catch (error) { recordError('IndexedDB', error); }
-
-                    try {
-                        if ('caches' in globalThis) {
-                            for (const name of await caches.keys()) {
-                                const cache = await caches.open(name);
-                                const requests = await cache.keys();
-                                data.cacheStorage.push({
-                                    name,
-                                    value: `${requests.length} cached request(s)`,
-                                    entries: requests.map(request => `${request.method} ${request.url}`)
-                                });
-                            }
-                        }
-                    } catch (error) { recordError('Cache Storage', error); }
-
-                    try {
-                        if ('serviceWorker' in navigator) {
-                            const registrations = await navigator.serviceWorker.getRegistrations();
-                            data.serviceWorkers = registrations.map(registration => ({
-                                name: registration.scope,
-                                value: registration.active?.state || registration.waiting?.state || registration.installing?.state || 'registered'
-                            }));
-                        }
-                    } catch (error) { recordError('Service Workers', error); }
-
-                    try {
-                        if (navigator.storage?.getDirectory) {
-                            const root = await navigator.storage.getDirectory();
-                            for await (const [name, handle] of root.entries()) {
-                                data.fileSystem.push({ name, value: handle.kind === 'directory' ? 'Directory' : 'File', kind: handle.kind });
-                            }
-                        }
-                    } catch (error) { recordError('Origin Private File System', error); }
-
-                    try {
-                        const estimate = await navigator.storage?.estimate?.();
-                        const persisted = await navigator.storage?.persisted?.();
-                        if (estimate) {
-                            data.storageOverview.push({ name: 'Usage', value: String(estimate.usage ?? 0) });
-                            data.storageOverview.push({ name: 'Quota', value: String(estimate.quota ?? 0) });
-                            data.storageOverview.push({ name: 'Persistent', value: persisted ? 'Yes' : 'No' });
-                        }
-                    } catch (error) { recordError('Storage Overview', error); }
-
-                    return data;
+                        return data;
+                    } catch (e) {
+                        return { __error: String(e), __errorCode: 'INTERNAL_SCRIPT_ERROR' };
+                    }
                 }
             })
         ]);
 
-        const siteData = injectionResultToDataObject(siteDataResult);
-        if (siteData.__error) {
-            await storeErrorForTab(tab.id, siteData.__errorCode || 'INTERNAL_SCRIPT_ERROR', siteData.__error);
+        const lsData = injectionResultToDataObject(localStorageResult);
+        if (lsData.__error) {
+            await storeErrorForTab(tab.id, lsData.__errorCode || 'INTERNAL_SCRIPT_ERROR', lsData.__error);
             return false;
         }
 
         const dataForPopup = {
             cookies: cookies || [],
-            siteData
+            localStorage: lsData
         };
         await chrome.storage.session.set({ [`${DATA_FOR_TAB_KEY_PREFIX}${tab.id}`]: dataForPopup });
         return true;

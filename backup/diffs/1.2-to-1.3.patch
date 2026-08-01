@@ -1,0 +1,1422 @@
+diff --git a/1.2/_locales/en/messages.json b/1.3/_locales/en/messages.json
+index 3b7f81a..e82348d 100644
+--- a/1.2/_locales/en/messages.json
++++ b/1.3/_locales/en/messages.json
+@@ -94,5 +94,24 @@
+             "deleteAllComplete": { "message": "All items were deleted", "description": "Bulk deletion completion message." },
+             "deleteAllPartial": { "message": "$1 item(s) could not be deleted.", "description": "Partial bulk deletion error." },
+             "deleteFailed": { "message": "Deletion failed", "description": "Deletion error prefix." },
+-            "tooltipHttpOnlyWarning": { "message": "HttpOnly cookies cannot be edited by page scripts, but this extension can delete them using the browser cookie API.", "description": "HttpOnly information." }
++            "tooltipHttpOnlyWarning": { "message": "HttpOnly cookies cannot be edited by page scripts, but this extension can delete them using the browser cookie API.", "description": "HttpOnly information." },
++            "sessionStorageTitle": { "message": "Session Storage", "description": "Session storage tab." },
++            "indexedDBTitle": { "message": "IndexedDB", "description": "IndexedDB tab." },
++            "cacheStorageTitle": { "message": "Cache Storage", "description": "Cache Storage tab." },
++            "serviceWorkersTitle": { "message": "Service Workers", "description": "Service workers tab." },
++            "fileSystemTitle": { "message": "File System", "description": "Origin private file system tab." },
++            "storageOverviewTitle": { "message": "Overview", "description": "Storage overview tab." },
++            "errorsTitle": { "message": "Errors", "description": "Collection errors tab." },
++            "noSessionStorage": { "message": "No session storage items found.", "description": "Empty session storage message." },
++            "noIndexedDB": { "message": "No IndexedDB databases found.", "description": "Empty IndexedDB message." },
++            "noCacheStorage": { "message": "No Cache Storage entries found.", "description": "Empty Cache Storage message." },
++            "noServiceWorkers": { "message": "No service workers found.", "description": "Empty service worker message." },
++            "noFileSystem": { "message": "No origin private files found.", "description": "Empty file system message." },
++            "noStorageOverview": { "message": "Storage usage information is unavailable.", "description": "Empty overview message." },
++            "noErrors": { "message": "No collection errors.", "description": "No errors message." },
++            "confirmDeleteSection": { "message": "Delete all $1 data shown in this tab? This cannot be undone.", "description": "Section clear confirmation." },
++            "deleteSiteDataButton": { "message": "Delete all site data", "description": "Full site data deletion button." },
++            "confirmDeleteSiteData": { "message": "Delete cookies, web storage, IndexedDB, caches, service workers, and private files for this site? The page will reload and this cannot be undone.", "description": "Full site deletion confirmation." },
++            "siteDataDeleted": { "message": "All available site data was deleted. The page is reloading.", "description": "Full deletion completion message." },
++            "saveFailed": { "message": "Save failed", "description": "Save error prefix." }
+           }
+diff --git a/1.2/_locales/ko/messages.json b/1.3/_locales/ko/messages.json
+index a57f0f5..16f9c32 100644
+--- a/1.2/_locales/ko/messages.json
++++ b/1.3/_locales/ko/messages.json
+@@ -94,5 +94,24 @@
+             "deleteAllComplete": { "message": "모든 항목을 삭제했습니다", "description": "전체삭제 완료 메시지입니다." },
+             "deleteAllPartial": { "message": "$1개 항목을 삭제하지 못했습니다.", "description": "일부 삭제 실패 메시지입니다." },
+             "deleteFailed": { "message": "삭제 실패", "description": "삭제 실패 메시지입니다." },
+-            "tooltipHttpOnlyWarning": { "message": "HttpOnly 쿠키는 페이지 스크립트가 수정할 수 없지만 이 확장 프로그램은 브라우저 쿠키 API로 삭제할 수 있습니다.", "description": "HttpOnly 안내입니다." }
++            "tooltipHttpOnlyWarning": { "message": "HttpOnly 쿠키는 페이지 스크립트가 수정할 수 없지만 이 확장 프로그램은 브라우저 쿠키 API로 삭제할 수 있습니다.", "description": "HttpOnly 안내입니다." },
++            "sessionStorageTitle": { "message": "세션 스토리지", "description": "세션 스토리지 탭입니다." },
++            "indexedDBTitle": { "message": "IndexedDB", "description": "IndexedDB 탭입니다." },
++            "cacheStorageTitle": { "message": "캐시 스토리지", "description": "캐시 스토리지 탭입니다." },
++            "serviceWorkersTitle": { "message": "서비스 워커", "description": "서비스 워커 탭입니다." },
++            "fileSystemTitle": { "message": "파일 시스템", "description": "Origin 전용 파일 시스템 탭입니다." },
++            "storageOverviewTitle": { "message": "저장공간 개요", "description": "저장공간 개요 탭입니다." },
++            "errorsTitle": { "message": "오류", "description": "수집 오류 탭입니다." },
++            "noSessionStorage": { "message": "세션 스토리지 항목이 없습니다.", "description": "빈 세션 스토리지 메시지입니다." },
++            "noIndexedDB": { "message": "IndexedDB 데이터베이스가 없습니다.", "description": "빈 IndexedDB 메시지입니다." },
++            "noCacheStorage": { "message": "캐시 스토리지 항목이 없습니다.", "description": "빈 캐시 스토리지 메시지입니다." },
++            "noServiceWorkers": { "message": "서비스 워커가 없습니다.", "description": "빈 서비스 워커 메시지입니다." },
++            "noFileSystem": { "message": "Origin 전용 파일이 없습니다.", "description": "빈 파일 시스템 메시지입니다." },
++            "noStorageOverview": { "message": "저장공간 사용 정보를 가져올 수 없습니다.", "description": "빈 개요 메시지입니다." },
++            "noErrors": { "message": "데이터 수집 오류가 없습니다.", "description": "오류 없음 메시지입니다." },
++            "confirmDeleteSection": { "message": "이 탭에 표시된 $1 데이터를 모두 삭제할까요? 되돌릴 수 없습니다.", "description": "영역 전체삭제 확인문입니다." },
++            "deleteSiteDataButton": { "message": "사이트 데이터 전체 삭제", "description": "사이트 데이터 전체삭제 버튼입니다." },
++            "confirmDeleteSiteData": { "message": "이 사이트의 쿠키, 웹 저장소, IndexedDB, 캐시, 서비스 워커와 전용 파일을 모두 삭제할까요? 페이지가 새로고침되며 되돌릴 수 없습니다.", "description": "사이트 데이터 전체삭제 확인문입니다." },
++            "siteDataDeleted": { "message": "삭제할 수 있는 사이트 데이터를 모두 삭제했습니다. 페이지를 새로고침합니다.", "description": "전체삭제 완료 메시지입니다." },
++            "saveFailed": { "message": "저장 실패", "description": "저장 실패 메시지입니다." }
+           }
+diff --git a/1.2/background.js b/1.3/background.js
+index baa583b..b077797 100644
+--- a/1.2/background.js
++++ b/1.3/background.js
+@@ -9,7 +9,18 @@ const setTabWindowMap = async (map) => await chrome.storage.session.set({ [TAB_W
+ async function storeErrorForTab(tabId, errorCode, errorMessage) {
+     const errorPopupData = {
+         cookies: [],
+-        localStorage: { __error: errorMessage, __errorCode: errorCode }
++        siteData: {
++            localStorage: [],
++            sessionStorage: [],
++            indexedDB: [],
++            cacheStorage: [],
++            serviceWorkers: [],
++            fileSystem: [],
++            storageOverview: [],
++            errors: [{ name: errorCode, value: errorMessage }],
++            __error: errorMessage,
++            __errorCode: errorCode
++        }
+     };
+     await chrome.storage.session.set({ [`${DATA_FOR_TAB_KEY_PREFIX}${tabId}`]: errorPopupData });
+ }
+@@ -17,34 +28,107 @@ async function storeErrorForTab(tabId, errorCode, errorMessage) {
+ // --- Data Fetching Helper ---
+ async function fetchDataForTab(tab) {
+     try {
+-        const [cookies, localStorageResult] = await Promise.all([
++        const [cookies, siteDataResult] = await Promise.all([
+             chrome.cookies.getAll({ url: tab.url }),
+             chrome.scripting.executeScript({
+                 target: { tabId: tab.id },
+-                func: () => {
++                func: async () => {
++                    const data = {
++                        localStorage: [],
++                        sessionStorage: [],
++                        indexedDB: [],
++                        cacheStorage: [],
++                        serviceWorkers: [],
++                        fileSystem: [],
++                        storageOverview: [],
++                        errors: []
++                    };
++                    const recordError = (area, error) => data.errors.push({ name: area, value: String(error) });
++
+                     try {
+-                        const data = {};
+                         for (let i = 0; i < localStorage.length; i++) {
+-                            const k = localStorage.key(i);
+-                            data[k] = localStorage.getItem(k);
++                            const name = localStorage.key(i);
++                            data.localStorage.push({ name, value: localStorage.getItem(name) });
++                        }
++                    } catch (error) { recordError('Local Storage', error); }
++
++                    try {
++                        for (let i = 0; i < sessionStorage.length; i++) {
++                            const name = sessionStorage.key(i);
++                            data.sessionStorage.push({ name, value: sessionStorage.getItem(name) });
++                        }
++                    } catch (error) { recordError('Session Storage', error); }
++
++                    try {
++                        if (typeof indexedDB.databases === 'function') {
++                            const databases = await indexedDB.databases();
++                            data.indexedDB = databases.filter(db => db.name).map(db => ({
++                                name: db.name,
++                                value: `Version ${db.version ?? '?'}`,
++                                version: db.version
++                            }));
++                        } else {
++                            recordError('IndexedDB', 'Database enumeration is not supported by this browser.');
++                        }
++                    } catch (error) { recordError('IndexedDB', error); }
++
++                    try {
++                        if ('caches' in globalThis) {
++                            for (const name of await caches.keys()) {
++                                const cache = await caches.open(name);
++                                const requests = await cache.keys();
++                                data.cacheStorage.push({
++                                    name,
++                                    value: `${requests.length} cached request(s)`,
++                                    entries: requests.map(request => `${request.method} ${request.url}`)
++                                });
++                            }
+                         }
+-                        return data;
+-                    } catch (e) {
+-                        return { __error: String(e), __errorCode: 'INTERNAL_SCRIPT_ERROR' };
+-                    }
++                    } catch (error) { recordError('Cache Storage', error); }
++
++                    try {
++                        if ('serviceWorker' in navigator) {
++                            const registrations = await navigator.serviceWorker.getRegistrations();
++                            data.serviceWorkers = registrations.map(registration => ({
++                                name: registration.scope,
++                                value: registration.active?.state || registration.waiting?.state || registration.installing?.state || 'registered'
++                            }));
++                        }
++                    } catch (error) { recordError('Service Workers', error); }
++
++                    try {
++                        if (navigator.storage?.getDirectory) {
++                            const root = await navigator.storage.getDirectory();
++                            for await (const [name, handle] of root.entries()) {
++                                data.fileSystem.push({ name, value: handle.kind === 'directory' ? 'Directory' : 'File', kind: handle.kind });
++                            }
++                        }
++                    } catch (error) { recordError('Origin Private File System', error); }
++
++                    try {
++                        const estimate = await navigator.storage?.estimate?.();
++                        const persisted = await navigator.storage?.persisted?.();
++                        if (estimate) {
++                            data.storageOverview.push({ name: 'Usage', value: String(estimate.usage ?? 0) });
++                            data.storageOverview.push({ name: 'Quota', value: String(estimate.quota ?? 0) });
++                            data.storageOverview.push({ name: 'Persistent', value: persisted ? 'Yes' : 'No' });
++                        }
++                    } catch (error) { recordError('Storage Overview', error); }
++
++                    return data;
+                 }
+             })
+         ]);
+ 
+-        const lsData = injectionResultToDataObject(localStorageResult);
+-        if (lsData.__error) {
+-            await storeErrorForTab(tab.id, lsData.__errorCode || 'INTERNAL_SCRIPT_ERROR', lsData.__error);
++        const siteData = injectionResultToDataObject(siteDataResult);
++        if (siteData.__error) {
++            await storeErrorForTab(tab.id, siteData.__errorCode || 'INTERNAL_SCRIPT_ERROR', siteData.__error);
+             return false;
+         }
+ 
+         const dataForPopup = {
+             cookies: cookies || [],
+-            localStorage: lsData
++            siteData
+         };
+         await chrome.storage.session.set({ [`${DATA_FOR_TAB_KEY_PREFIX}${tab.id}`]: dataForPopup });
+         return true;
+diff --git a/1.2/manifest.json b/1.3/manifest.json
+index 2f0a2e8..00aea90 100644
+--- a/1.2/manifest.json
++++ b/1.3/manifest.json
+@@ -1,12 +1,13 @@
+ {
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+-  "version": "1.2",
++  "version": "1.3",
+   "description": "__MSG_extDescription__",
+   "default_locale": "en",
+   "author": "JellyKing",
+   "permissions": [
+     "activeTab",
++    "browsingData",
+     "cookies",
+     "storage",
+     "scripting"
+diff --git a/1.2/popup.css b/1.3/popup.css
+index 112a310..68f8814 100644
+--- a/1.2/popup.css
++++ b/1.3/popup.css
+@@ -96,9 +96,130 @@ header {
+ main {
+     flex-grow: 1; /* Allow main to fill available space */
+     display: flex;
++    flex-direction: column;
+     min-height: 0; /* Important for flex-grow in a flex column */
+ }
+ 
++.storage-workspace {
++    display: flex;
++    flex-direction: column;
++    flex: 1;
++    min-height: 0;
++}
++
++.storage-tabs {
++    display: flex;
++    align-items: flex-end;
++    gap: 3px;
++    overflow-x: auto;
++    flex-shrink: 0;
++    padding: 0 2px;
++    border-bottom: 1px solid #cfd5dd;
++}
++
++.storage-tab {
++    display: inline-flex;
++    align-items: center;
++    gap: 6px;
++    white-space: nowrap;
++    padding: 8px 11px;
++    border: 1px solid transparent;
++    border-bottom: 0;
++    border-radius: 6px 6px 0 0;
++    color: #586174;
++    background: transparent;
++    cursor: pointer;
++    font-size: 12px;
++}
++
++.storage-tab:hover {
++    background: #f0f3f7;
++    color: #273142;
++}
++
++.storage-tab.active {
++    margin-bottom: -1px;
++    color: #155eef;
++    font-weight: 700;
++    background: #fff;
++    border-color: #cfd5dd;
++    padding-bottom: 9px;
++}
++
++.tab-count {
++    min-width: 16px;
++    padding: 1px 5px;
++    border-radius: 999px;
++    background: #e8edf5;
++    color: #526071;
++    font-size: 10px;
++    text-align: center;
++}
++
++.storage-tab.active .tab-count {
++    color: #175cd3;
++    background: #dbeafe;
++}
++
++.tab-panel {
++    display: flex;
++    flex-direction: column;
++    flex: 1;
++    min-height: 0;
++    padding-top: 9px;
++}
++
++.panel-toolbar {
++    display: flex;
++    align-items: center;
++    justify-content: space-between;
++    gap: 12px;
++    margin-bottom: 6px;
++}
++
++.panel-toolbar h2 {
++    margin: 0;
++}
++
++#section-actions {
++    display: flex;
++    gap: 6px;
++}
++
++.section-action {
++    height: 28px;
++    padding: 0 10px;
++    border: 1px solid #cdd3dc;
++    border-radius: 5px;
++    color: #344054;
++    background: #fff;
++    cursor: pointer;
++    font-size: 11px;
++}
++
++.section-action:hover:not(:disabled) {
++    background: #f5f7fa;
++}
++
++.section-action.danger {
++    color: #b42318;
++    border-color: #f0b4ae;
++    background: #fff5f4;
++}
++
++.section-action:disabled {
++    opacity: .45;
++    cursor: not-allowed;
++}
++
++.empty-state {
++    display: grid;
++    place-items: center;
++    min-height: 140px;
++    color: #8992a3;
++    font-size: 13px;
++}
++
+ .list-wrapper {
+     display: flex;
+     flex-direction: column;
+@@ -238,6 +359,38 @@ footer {
+     align-items: center;
+ }
+ 
++.footer-actions {
++    display: flex;
++    align-items: center;
++    gap: 12px;
++}
++
++.delete-site-data-btn {
++    min-height: 34px;
++    padding: 0 16px;
++    border: 1px solid #d92d20;
++    border-radius: 6px;
++    color: #fff;
++    background: #d92d20;
++    box-shadow: 0 1px 2px rgba(16, 24, 40, .08);
++    font-size: 13px;
++    font-weight: 700;
++    cursor: pointer;
++}
++
++.delete-site-data-btn:hover:not(:disabled) {
++    background: #b42318;
++}
++
++.delete-site-data-btn:disabled {
++    opacity: .55;
++    cursor: wait;
++}
++
++.version-info {
++    white-space: nowrap;
++}
++
+ .language-selector-wrapper {
+     margin-right: 10px; /* Add some space between the selector and the sponsor link */
+ }
+diff --git a/1.2/popup.html b/1.3/popup.html
+index 4e585fe..9fe0b92 100644
+--- a/1.2/popup.html
++++ b/1.3/popup.html
+@@ -35,16 +35,15 @@
+ 
+     <main>
+         <div id="notification-banner"></div>
+-        <div class="list-wrapper">
+-            <div class="list-section" id="cookies-section">
+-                <h2 data-i18n="cookiesTitle"></h2>
+-                <div id="cookies-list" class="data-list"></div>
+-            </div>
+-            <div id="resizer"></div> <!-- Draggable resizer -->
+-            <div class="list-section" id="localstorage-section">
+-                <h2 data-i18n="localStorageTitle"></h2>
+-                <div id="localstorage-list" class="data-list"></div>
+-            </div>
++        <div class="storage-workspace">
++            <div id="storage-tabs" class="storage-tabs" role="tablist" aria-label="Site data types"></div>
++            <section class="tab-panel" role="tabpanel">
++                <div class="panel-toolbar">
++                    <h2 id="active-section-title"></h2>
++                    <div id="section-actions"></div>
++                </div>
++                <div id="active-data-list" class="data-list"></div>
++            </section>
+         </div>
+       <div id="export-overlay">
+       <div class="panel">
+@@ -59,7 +58,10 @@
+         <div class="footer-left">
+                             <span data-i18n="footerText"></span>
+                             <span class="privacy-notice" data-i18n="privacyNotice"></span>        </div>
+-        <div class="version-info" id="version-display"></div>
++        <div class="footer-actions">
++            <button id="delete-site-data-btn" class="delete-site-data-btn" data-i18n="deleteSiteDataButton"></button>
++            <div class="version-info" id="version-display"></div>
++        </div>
+     </footer>
+ 
+     <script src="popup.js"></script>
+diff --git a/1.2/popup.js b/1.3/popup.js
+index 244fefd..16859ec 100644
+--- a/1.2/popup.js
++++ b/1.3/popup.js
+@@ -3,608 +3,470 @@ document.addEventListener('DOMContentLoaded', async () => {
+     const messages = {};
+     let currentLang = 'en';
+     let activeTab;
+-    let currentData = null;
++    let currentData;
++    let activeSection = 'cookies';
+ 
+-    const cookiesList = document.getElementById('cookies-list');
+-    const localStorageList = document.getElementById('localstorage-list');
++    const tabsElement = document.getElementById('storage-tabs');
++    const listElement = document.getElementById('active-data-list');
++    const titleElement = document.getElementById('active-section-title');
++    const actionsElement = document.getElementById('section-actions');
+     const searchBox = document.getElementById('search-box');
+ 
+-    // --- Utilities: clipboard & file download ---
+-    async function copyToClipboard(text) {
+-      try {
+-        await navigator.clipboard.writeText(text);
+-      } catch {
+-        const ta = document.createElement('textarea');
+-        ta.value = text;
+-        document.body.appendChild(ta);
+-        ta.select();
+-        document.execCommand('copy');
+-        ta.remove();
+-      }
+-    }
+-
+-    function downloadText(filename, text) {
+-      const blob = new Blob([text], { type: 'application/json;charset=utf-8' });
+-      const url = URL.createObjectURL(blob);
+-      const a = document.createElement('a');
+-      a.href = url; a.download = filename;
+-      document.body.appendChild(a);
+-      a.click();
+-      a.remove();
+-      URL.revokeObjectURL(url);
+-    }
+-
+-    function nowStamp() {
+-      const d = new Date();
+-      const pad = (n)=> String(n).padStart(2, '0');
+-      return `${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}_${pad(d.getHours())}${pad(d.getMinutes())}${pad(d.getSeconds())}`;
+-    }
+-
+-    const safe = s => s.replace(/[\/:*?"<>|]/g, '_').slice(0, 80);
++    const sectionDefinitions = [
++        { id: 'cookies', label: 'cookiesTitle', empty: 'noCookies', mutable: true },
++        { id: 'localStorage', label: 'localStorageTitle', empty: 'noLocalStorage', mutable: true },
++        { id: 'sessionStorage', label: 'sessionStorageTitle', empty: 'noSessionStorage', mutable: true },
++        { id: 'indexedDB', label: 'indexedDBTitle', empty: 'noIndexedDB', mutable: true },
++        { id: 'cacheStorage', label: 'cacheStorageTitle', empty: 'noCacheStorage', mutable: true },
++        { id: 'serviceWorkers', label: 'serviceWorkersTitle', empty: 'noServiceWorkers', mutable: true },
++        { id: 'fileSystem', label: 'fileSystemTitle', empty: 'noFileSystem', mutable: true },
++        { id: 'storageOverview', label: 'storageOverviewTitle', empty: 'noStorageOverview', mutable: false },
++        { id: 'errors', label: 'errorsTitle', empty: 'noErrors', mutable: false }
++    ];
+ 
+-    function showToast(msg) {
+-      const el = document.getElementById('toast');
+-      if (!el) return;
+-      el.textContent = msg;
+-      el.classList.add('visible');
+-      setTimeout(() => el.classList.remove('visible'), 1800);
+-    }
+-
+-    function withExportOverlay(fn) {
+-      const overlay = document.getElementById('export-overlay');
+-      if (!overlay) return fn();
+-      overlay.classList.add('visible');
+-      setTimeout(async () => {
+-        try { await fn(); } finally { overlay.classList.remove('visible'); }
+-      }, 30);
+-    }
+-
+-    // --- 1. Localization & UI Helpers ---
+     async function loadMessages() {
+         for (const lang of languages) {
+             try {
+-                const url = chrome.runtime.getURL(`_locales/${lang}/messages.json`);
+-                const response = await fetch(url);
++                const response = await fetch(chrome.runtime.getURL(`_locales/${lang}/messages.json`));
+                 if (response.ok) messages[lang] = await response.json();
+             } catch (error) {
+-                console.error(`Error fetching messages for ${lang}:`, error);
++                console.error(`Could not load ${lang} messages:`, error);
+             }
+         }
+     }
+ 
+     const i18n = {
+-        getMessage: (key) => messages[currentLang]?.[key]?.message || messages['en']?.[key]?.message || `[${key}]`
++        getMessage(key) {
++            return messages[currentLang]?.[key]?.message || messages.en?.[key]?.message || `[${key}]`;
++        }
+     };
+ 
+     function localizeHtmlPage(lang) {
+         currentLang = lang;
+         document.title = i18n.getMessage('extName');
+-        document.querySelectorAll('[data-i18n]').forEach(el => el.textContent = i18n.getMessage(el.getAttribute('data-i18n')));
+-        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => el.placeholder = i18n.getMessage(el.getAttribute('data-i18n-placeholder')));
++        document.querySelectorAll('[data-i18n]').forEach(element => {
++            element.textContent = i18n.getMessage(element.dataset.i18n);
++        });
++        document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
++            element.placeholder = i18n.getMessage(element.dataset.i18nPlaceholder);
++        });
+         if (activeTab) {
+             document.getElementById('fetch-time').textContent = `${i18n.getMessage('fetchedAt')} ${new Date().toLocaleTimeString()}`;
+         }
++        if (currentData) renderWorkspace();
+     }
+ 
+     function showBanner(message, type = 'info') {
+         const banner = document.getElementById('notification-banner');
+-        if (!banner) return;
+-        banner.innerHTML = message;
++        banner.textContent = message;
+         banner.className = `visible ${type}`;
+-        if (type === 'info') {
+-            setTimeout(() => {
+-                banner.classList.remove('visible');
+-            }, 5000); // Auto-dismiss info banners after 5 seconds
+-        }
++        if (type === 'info') setTimeout(() => banner.classList.remove('visible'), 5000);
+     }
+ 
+-    // --- 2. Data Loading & Rendering ---
+-    async function loadDataFromStorage() {
+-        const tabId = parseInt(new URLSearchParams(window.location.search).get('tabId'));
+-        if (!tabId) {
+-            showBanner(i18n.getMessage('errorTabId'), 'error');
+-            return;
+-        }
++    function showToast(message) {
++        const toast = document.getElementById('toast');
++        toast.textContent = message;
++        toast.classList.add('visible');
++        setTimeout(() => toast.classList.remove('visible'), 2200);
++    }
+ 
+-        const storageKey = `dataForTab:${tabId}`;
+-        const result = await chrome.storage.session.get(storageKey);
+-        await chrome.storage.session.remove(storageKey);
++    function safeFilePart(value) {
++        return String(value).replace(/[\\/:*?"<>|]/g, '_').slice(0, 80);
++    }
+ 
+-        if (!result || !result[storageKey]) {
+-            showBanner(i18n.getMessage('errorAccess'), 'error');
+-            return;
++    function nowStamp() {
++        const date = new Date();
++        const pad = number => String(number).padStart(2, '0');
++        return `${date.getFullYear()}${pad(date.getMonth() + 1)}${pad(date.getDate())}_${pad(date.getHours())}${pad(date.getMinutes())}${pad(date.getSeconds())}`;
++    }
++
++    function downloadJson(filename, value) {
++        const url = URL.createObjectURL(new Blob([JSON.stringify(value, null, 2)], { type: 'application/json;charset=utf-8' }));
++        const anchor = document.createElement('a');
++        anchor.href = url;
++        anchor.download = filename;
++        document.body.appendChild(anchor);
++        anchor.click();
++        anchor.remove();
++        URL.revokeObjectURL(url);
++    }
++
++    async function copyText(text) {
++        try {
++            await navigator.clipboard.writeText(text);
++        } catch {
++            const area = document.createElement('textarea');
++            area.value = text;
++            document.body.appendChild(area);
++            area.select();
++            document.execCommand('copy');
++            area.remove();
+         }
++    }
+ 
+-        const { cookies, localStorage } = result[storageKey];
+-        currentData = { cookies: cookies || [], localStorage: localStorage || {} };
+-
+-        // Handle Global Errors
+-        if (localStorage?.__errorCode) {
+-            const errorCode = localStorage.__errorCode;
+-            const errorMessage = localStorage.__error;
+-            const messageKeyMap = {
+-                'UNSUPPORTED_SCHEME': 'errorUnsupportedScheme',
+-                'PERMISSION_DENIED': 'errorPermissionDenied',
+-                'SCRIPT_EXECUTION_FAILED': 'errorScriptExecutionFailed',
+-                'INTERNAL_SCRIPT_ERROR': 'errorInternalScript',
+-                'UNKNOWN_ERROR': 'errorUnknown'
+-            };
+-            const titleKey = messageKeyMap[errorCode] || 'errorUnknown';
+-            showBanner(`<strong>${i18n.getMessage(titleKey)}</strong><br>${errorMessage}`, 'error');
+-            cookiesList.innerHTML = `<div class="data-item">${i18n.getMessage('noCookies')}</div>`;
+-            localStorageList.innerHTML = `<div class="data-item">${i18n.getMessage('noLocalStorage')}</div>`;
++    function executeOnPage(func, args = []) {
++        return new Promise((resolve, reject) => {
++            chrome.scripting.executeScript({ target: { tabId: activeTab.id }, func, args }, results => {
++                if (chrome.runtime.lastError) reject(new Error(chrome.runtime.lastError.message));
++                else resolve(results?.[0]?.result);
++            });
++        });
++    }
++
++    async function loadData() {
++        const storageKey = `dataForTab:${activeTab.id}`;
++        const stored = await chrome.storage.session.get(storageKey);
++        await chrome.storage.session.remove(storageKey);
++        if (!stored?.[storageKey]) {
++            showBanner(i18n.getMessage('errorAccess'), 'error');
+             return;
+-        } 
+-        // Show info banner if there are HttpOnly cookies
+-        else if (cookies && cookies.some(c => c.httpOnly)) {
+-            showBanner(i18n.getMessage('tooltipHttpOnlyWarning'), 'info');
+         }
+ 
+-        // Render Cookies
+-        cookiesList.innerHTML = '';
+-        if (!cookies || cookies.length === 0) {
+-            cookiesList.innerHTML = `<div class="data-item">${i18n.getMessage('noCookies')}</div>`;
+-        } else {
+-            renderList(cookiesList, cookies, (cookie) => createDataItem(cookie, 'cookie'));
+-        }
++        const payload = stored[storageKey];
++        const siteData = payload.siteData || {};
++        currentData = {
++            cookies: payload.cookies || [],
++            localStorage: siteData.localStorage || [],
++            sessionStorage: siteData.sessionStorage || [],
++            indexedDB: siteData.indexedDB || [],
++            cacheStorage: siteData.cacheStorage || [],
++            serviceWorkers: siteData.serviceWorkers || [],
++            fileSystem: siteData.fileSystem || [],
++            storageOverview: siteData.storageOverview || [],
++            errors: siteData.errors || []
++        };
+ 
+-        // Render Local Storage
+-        localStorageList.innerHTML = '';
+-        const lsItems = Object.keys(localStorage).map(key => ({ name: key, value: localStorage[key] }));
+-        if (lsItems.length === 0) {
+-            localStorageList.innerHTML = `<div class="data-item">${i18n.getMessage('noLocalStorage')}</div>`;
+-        } else {
+-            renderList(localStorageList, lsItems, (item) => createDataItem(item, 'localStorage'));
+-        }
+-        
+-        addSectionButtons(cookies, localStorage);
+-        handleSearch();
++        if (siteData.__errorCode) showBanner(siteData.__error || i18n.getMessage('errorAccess'), 'error');
++        else if (currentData.cookies.some(cookie => cookie.httpOnly)) showBanner(i18n.getMessage('tooltipHttpOnlyWarning'), 'info');
++        renderWorkspace();
+     }
+ 
+-    const PAGE_SIZE = 200;
+-    function renderList(container, items, factory) {
+-        container.innerHTML = "";
+-        let page = 0;
+-        function draw() {
+-            const slice = items.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+-            slice.forEach(obj => container.appendChild(factory(obj)));
+-            page++;
+-            if (page * PAGE_SIZE < items.length) {
+-                const btn = document.createElement('button');
+-                btn.className = 'load-more-btn';
+-                btn.textContent = `Load more (${items.length - page * PAGE_SIZE})`;
+-                btn.onclick = () => { btn.remove(); draw(); };
+-                container.appendChild(btn);
+-            }
+-        }
+-        draw();
++    function getSection() {
++        return sectionDefinitions.find(section => section.id === activeSection);
+     }
+ 
+-    // --- 3. UI & Event Handlers ---
+-    function initializePopup() {
+-        const params = new URLSearchParams(window.location.search);
+-        const tabId = parseInt(params.get('tabId'));
+-        const tabTitle = decodeURIComponent(params.get('title') || '');
+-        const tabUrl = decodeURIComponent(params.get('url') || '');
++    function renderWorkspace() {
++        renderTabs();
++        renderActiveSection();
++    }
+ 
+-        if (!tabId || !tabUrl) {
+-            showBanner(i18n.getMessage('errorTabId'), 'error');
+-            return;
++    function renderTabs() {
++        tabsElement.innerHTML = '';
++        for (const section of sectionDefinitions) {
++            const button = document.createElement('button');
++            button.className = 'storage-tab';
++            button.type = 'button';
++            button.role = 'tab';
++            button.dataset.section = section.id;
++            button.setAttribute('aria-selected', String(section.id === activeSection));
++            if (section.id === activeSection) button.classList.add('active');
++            const count = currentData[section.id]?.length || 0;
++            button.innerHTML = `<span>${i18n.getMessage(section.label)}</span><span class="tab-count">${count}</span>`;
++            button.addEventListener('click', () => {
++                activeSection = section.id;
++                renderWorkspace();
++            });
++            tabsElement.appendChild(button);
+         }
+-        activeTab = { id: tabId, title: tabTitle, url: tabUrl };
+-
+-        document.getElementById('tab-title').textContent = activeTab.title || activeTab.url;
+-        const tabUrlElement = document.getElementById('tab-url');
+-        tabUrlElement.textContent = new URL(activeTab.url).hostname;
+-        tabUrlElement.href = activeTab.url;
+-        document.getElementById('fetch-time').textContent = `${i18n.getMessage('fetchedAt')} ${new Date().toLocaleTimeString()}`;
+-
+-        loadDataFromStorage();
+     }
+ 
+-    function createDataItem(dataObject, type) {
+-        const item = document.createElement('div');
+-        item.className = 'data-item';
+-        item.dataset.key = dataObject.name;
+-        item.dataset.type = type;
+-        item.dataObject = dataObject;
+-        item.dataset.keyLc = dataObject.name.toLowerCase();
+-        item.dataset.valueLc = (dataObject.value || '').toLowerCase();
+-
+-        const keyEl = document.createElement('div');
+-        keyEl.className = 'data-key';
+-        keyEl.textContent = dataObject.name;
+-
+-        if (type === 'cookie') {
+-            const badgeContainer = document.createElement('span');
+-            badgeContainer.className = 'badge-container';
+-            if (dataObject.httpOnly) {
+-                const badge = document.createElement('span');
+-                badge.className = 'badge http-only';
+-                badge.textContent = 'HttpOnly';
+-                badgeContainer.appendChild(badge);
+-            }
+-            if (dataObject.secure) {
+-                const badge = document.createElement('span');
+-                badge.className = 'badge secure';
+-                badge.textContent = 'Secure';
+-                badgeContainer.appendChild(badge);
+-            }
+-            if (dataObject.partitionKey) {
+-                const badge = document.createElement('span');
+-                badge.className = 'badge partitioned';
+-                badge.textContent = 'Partitioned';
+-                badgeContainer.appendChild(badge);
+-            }
+-            keyEl.appendChild(badgeContainer);
+-            if (dataObject.httpOnly) {
+-                item.title = i18n.getMessage('tooltipHttpOnlyWarning');
+-            }
++    function formatValue(item, sectionId) {
++        if (sectionId === 'storageOverview' && ['Usage', 'Quota'].includes(item.name)) {
++            const bytes = Number(item.value);
++            if (Number.isFinite(bytes)) return `${bytes.toLocaleString()} bytes (${(bytes / 1024 / 1024).toFixed(2)} MiB)`;
+         }
++        if (item.entries?.length) return `${item.value}\n${item.entries.join('\n')}`;
++        return String(item.value ?? '');
++    }
+ 
+-        const valueEl = document.createElement('div');
+-        valueEl.className = 'data-value';
+-        valueEl.textContent = dataObject.value;
+-
+-        setTimeout(() => {
+-            if (valueEl.scrollHeight > valueEl.clientHeight) {
+-                valueEl.classList.add('collapsible');
+-                const showMoreBtn = document.createElement('span');
+-                showMoreBtn.className = 'show-more-btn';
+-                showMoreBtn.textContent = i18n.getMessage('showMore');
+-                showMoreBtn.addEventListener('click', (e) => {
+-                    e.stopPropagation();
+-                    const isExpanded = valueEl.classList.toggle('expanded');
+-                    showMoreBtn.textContent = isExpanded ? i18n.getMessage('showLess') : i18n.getMessage('showMore');
+-                });
+-                valueEl.appendChild(showMoreBtn);
+-            }
+-        }, 0);
+-
+-        const actionsEl = document.createElement('div');
+-        actionsEl.className = 'actions';
+-
+-        const copyBtn = document.createElement('button');
+-        copyBtn.className = 'action-btn';
+-        copyBtn.innerHTML = '⧉';
+-        copyBtn.title = i18n.getMessage('copyButtonLabel');
+-        copyBtn.setAttribute('aria-label', i18n.getMessage('copyButtonLabel'));
+-
+-        const saveBtn = document.createElement('button');
+-        saveBtn.className = 'action-btn';
+-        saveBtn.innerHTML = '⬇';
+-        saveBtn.title = i18n.getMessage('saveButtonLabel');
+-        saveBtn.setAttribute('aria-label', i18n.getMessage('saveButtonLabel'));
+-
+-        copyBtn.addEventListener('click', (e) => {
+-            e.stopPropagation();
+-            const payload = (type === 'cookie') ? dataObject : { name: dataObject.name, value: dataObject.value };
+-            copyToClipboard(JSON.stringify(payload, null, 2));
+-            showToast(i18n.getMessage('copiedToast') || 'Copied to clipboard');
+-        });
++    function renderActiveSection() {
++        const section = getSection();
++        const items = currentData[activeSection] || [];
++        titleElement.textContent = `${i18n.getMessage(section.label)} (${items.length})`;
++        actionsElement.innerHTML = '';
++        listElement.innerHTML = '';
+ 
+-        saveBtn.addEventListener('click', (e) => {
+-            e.stopPropagation();
++        addSectionAction(i18n.getMessage('exportAllButtonLabel'), 'export', () => {
+             const host = new URL(activeTab.url).hostname;
+-            const base = `${safe(host)}_${type}_${safe(dataObject.name)}_${nowStamp()}.json`;
+-            const payload = (type === 'cookie') ? dataObject : { name: dataObject.name, value: dataObject.value };
+-            downloadText(base, JSON.stringify(payload, null, 2));
+-            showToast(i18n.getMessage('savedToast') || 'Saved as file');
+-        });
++            downloadJson(`${safeFilePart(host)}_${activeSection}_${nowStamp()}.json`, items);
++        }, items.length === 0);
+ 
+-        const editBtn = document.createElement('button');
+-        editBtn.className = 'action-btn';
+-        editBtn.innerHTML = '&#9998;';
+-        editBtn.title = i18n.getMessage('editButton');
+-        editBtn.setAttribute('aria-label', i18n.getMessage('editButton'));
+-
+-        const deleteBtn = document.createElement('button');
+-        deleteBtn.className = 'action-btn';
+-        deleteBtn.innerHTML = '&#10006;';
+-        deleteBtn.title = i18n.getMessage('deleteButton');
+-        deleteBtn.setAttribute('aria-label', i18n.getMessage('deleteButton'));
+-
+-        if (type === 'cookie' && dataObject.httpOnly) {
+-            editBtn.disabled = true;
+-        } else {
+-            editBtn.addEventListener('click', () => toggleEditState(item, valueEl, editBtn));
++        if (section.mutable) {
++            addSectionAction(i18n.getMessage('deleteAllButtonLabel'), 'danger', () => clearSection(activeSection), items.length === 0);
+         }
+-        deleteBtn.addEventListener('click', () => handleDelete(dataObject.name, type, item));
+ 
+-        actionsEl.appendChild(copyBtn);
+-        actionsEl.appendChild(saveBtn);
+-        actionsEl.appendChild(editBtn);
+-        actionsEl.appendChild(deleteBtn);
++        if (items.length === 0) {
++            const empty = document.createElement('div');
++            empty.className = 'empty-state';
++            empty.textContent = i18n.getMessage(section.empty);
++            listElement.appendChild(empty);
++            return;
++        }
+ 
+-        item.appendChild(keyEl);
+-        item.appendChild(valueEl);
+-        item.appendChild(actionsEl);
+-        return item;
++        for (const item of items) listElement.appendChild(createDataItem(item, section));
++        applySearch();
+     }
+ 
+-    function debounce(func, delay) {
+-        let timeout;
+-        return function(...args) {
+-            clearTimeout(timeout);
+-            timeout = setTimeout(() => func.apply(this, args), delay);
+-        };
++    function addSectionAction(label, style, handler, disabled) {
++        const button = document.createElement('button');
++        button.className = `section-action ${style}`;
++        button.textContent = label;
++        button.disabled = disabled;
++        button.addEventListener('click', handler);
++        actionsElement.appendChild(button);
+     }
+ 
+-    function handleSearch() {
+-        const searchTerm = searchBox.value.toLowerCase();
+-        let cookiesVisible = 0;
+-        let lsVisible = 0;
++    function createDataItem(item, section) {
++        const row = document.createElement('div');
++        row.className = 'data-item';
++        row.dataset.search = `${item.name || ''} ${formatValue(item, section.id)}`.toLowerCase();
++
++        const key = document.createElement('div');
++        key.className = 'data-key';
++        key.textContent = item.name;
++        if (section.id === 'cookies') {
++            const badges = document.createElement('span');
++            badges.className = 'badge-container';
++            for (const [enabled, text, className] of [
++                [item.httpOnly, 'HttpOnly', 'http-only'],
++                [item.secure, 'Secure', 'secure'],
++                [item.partitionKey, 'Partitioned', 'partitioned']
++            ]) {
++                if (enabled) {
++                    const badge = document.createElement('span');
++                    badge.className = `badge ${className}`;
++                    badge.textContent = text;
++                    badges.appendChild(badge);
++                }
++            }
++            key.appendChild(badges);
++        }
+ 
+-        document.querySelectorAll('#cookies-list .data-item').forEach(item => {
+-            if (item.classList.contains('error-item')) return;
+-            const isVisible = (item.dataset.keyLc || '').includes(searchTerm) || (item.dataset.valueLc || '').includes(searchTerm);
+-            item.classList.toggle('hidden', !isVisible);
+-            if (isVisible) cookiesVisible++;
+-        });
++        const value = document.createElement('div');
++        value.className = 'data-value';
++        value.textContent = formatValue(item, section.id);
+ 
+-        document.querySelectorAll('#localstorage-list .data-item').forEach(item => {
+-            if (item.classList.contains('error-item')) return;
+-            const isVisible = (item.dataset.keyLc || '').includes(searchTerm) || (item.dataset.valueLc || '').includes(searchTerm);
+-            item.classList.toggle('hidden', !isVisible);
+-            if (isVisible) lsVisible++;
++        const rowActions = document.createElement('div');
++        rowActions.className = 'actions';
++        addRowButton(rowActions, '⧉', i18n.getMessage('copyButtonLabel'), async () => {
++            await copyText(JSON.stringify(item, null, 2));
++            showToast(i18n.getMessage('copiedToast'));
+         });
+ 
+-        const cookiesHeader = document.querySelector('#cookies-section h2');
+-        if (cookiesHeader) {
+-            let countSpan = cookiesHeader.querySelector('.count');
+-            if (!countSpan) {
+-                countSpan = document.createElement('span');
+-                countSpan.className = 'count';
+-                cookiesHeader.appendChild(countSpan);
+-            }
+-            countSpan.textContent = ` (${cookiesVisible} found)`;
++        if (['cookies', 'localStorage', 'sessionStorage'].includes(section.id)) {
++            const edit = addRowButton(rowActions, '✎', i18n.getMessage('editButton'), () => toggleEdit(row, value, edit, item, section.id));
++            if (section.id === 'cookies' && item.httpOnly) edit.disabled = true;
+         }
++        if (section.mutable) addRowButton(rowActions, '✕', i18n.getMessage('deleteButton'), () => deleteItem(item, section.id));
+ 
+-        const lsHeader = document.querySelector('#localstorage-section h2');
+-        if (lsHeader) {
+-            let countSpan = lsHeader.querySelector('.count');
+-            if (!countSpan) {
+-                countSpan = document.createElement('span');
+-                countSpan.className = 'count';
+-                lsHeader.appendChild(countSpan);
+-            }
+-            countSpan.textContent = ` (${lsVisible} found)`;
+-        }
++        row.append(key, value, rowActions);
++        return row;
+     }
+ 
+-    function toggleEditState(item, valueEl, editBtn) {
+-        const isEditing = valueEl.isContentEditable;
+-        if (isEditing) {
+-            valueEl.contentEditable = false;
+-            editBtn.innerHTML = '&#9998;';
+-            editBtn.title = i18n.getMessage('editButton');
+-            valueEl.classList.remove('editing');
+-            saveChanges(item.dataset.key, valueEl.textContent, item.dataset.type, item.dataObject);
+-        } else {
+-            valueEl.contentEditable = true;
+-            editBtn.innerHTML = '&#128190;';
+-            editBtn.title = i18n.getMessage('saveButton');
+-            valueEl.classList.add('editing');
+-            valueEl.focus();
++    function addRowButton(container, text, title, handler) {
++        const button = document.createElement('button');
++        button.className = 'action-btn';
++        button.textContent = text;
++        button.title = title;
++        button.setAttribute('aria-label', title);
++        button.addEventListener('click', handler);
++        container.appendChild(button);
++        return button;
++    }
++
++    async function toggleEdit(row, valueElement, button, item, sectionId) {
++        if (!valueElement.isContentEditable) {
++            valueElement.contentEditable = 'true';
++            valueElement.classList.add('editing');
++            button.textContent = '💾';
++            valueElement.focus();
++            return;
++        }
++        try {
++            const newValue = valueElement.textContent;
++            if (sectionId === 'cookies') await setCookie(item, newValue);
++            else {
++                await executeOnPage((storageType, name, value) => window[storageType].setItem(name, value), [sectionId, item.name, newValue]);
++            }
++            item.value = newValue;
++            valueElement.contentEditable = 'false';
++            valueElement.classList.remove('editing');
++            button.textContent = '✎';
++            showToast(i18n.getMessage('savedToast'));
++        } catch (error) {
++            showBanner(`${i18n.getMessage('saveFailed')}: ${error.message}`, 'error');
+         }
+     }
+ 
+-    function saveChanges(key, newValue, type, originalData) {
+-        if (type === 'cookie') {
+-            const cookieToSet = {
+-                url: activeTab.url,
+-                name: key,
+-                value: newValue,
+-                domain: originalData.domain,
+-                path: originalData.path || "/",
+-                secure: !!originalData.secure,
+-                httpOnly: !!originalData.httpOnly,
+-                sameSite: originalData.sameSite || "no_restriction",
+-                expirationDate: originalData.session ? undefined : originalData.expirationDate,
+-                storeId: originalData.storeId
++    function setCookie(cookie, newValue) {
++        return new Promise((resolve, reject) => {
++            const details = {
++                url: cookieRemovalUrl(cookie), name: cookie.name, value: newValue,
++                domain: cookie.domain, path: cookie.path || '/', secure: !!cookie.secure,
++                httpOnly: !!cookie.httpOnly, sameSite: cookie.sameSite || 'unspecified',
++                storeId: cookie.storeId
+             };
+-            if (originalData.partitionKey) {
+-                cookieToSet.partitionKey = originalData.partitionKey;
+-            }
+-            chrome.cookies.set(cookieToSet, () => {
+-                if (chrome.runtime.lastError) alert(`Failed to set cookie: ${chrome.runtime.lastError.message}`);
+-                else originalData.value = newValue;
+-            });
+-        } else if (type === 'localStorage') {
+-            chrome.scripting.executeScript({
+-                target: { tabId: activeTab.id },
+-                func: (k, v) => localStorage.setItem(k, v),
+-                args: [key, newValue],
+-            }, () => {
+-                if (chrome.runtime.lastError) alert(`Failed to set localStorage item: ${chrome.runtime.lastError.message}`);
+-                else originalData.value = newValue;
++            if (!cookie.session) details.expirationDate = cookie.expirationDate;
++            if (cookie.partitionKey) details.partitionKey = cookie.partitionKey;
++            chrome.cookies.set(details, result => {
++                if (chrome.runtime.lastError || !result) reject(new Error(chrome.runtime.lastError?.message || 'Cookie was not saved.'));
++                else resolve(result);
+             });
+-        }
++        });
+     }
+ 
+     function cookieRemovalUrl(cookie) {
+         const scheme = cookie.secure ? 'https://' : 'http://';
+         const host = (cookie.domain || new URL(activeTab.url).hostname).replace(/^\./, '');
+-        const path = cookie.path && cookie.path.startsWith('/') ? cookie.path : '/';
++        const path = cookie.path?.startsWith('/') ? cookie.path : '/';
+         return `${scheme}${host}${path}`;
+     }
+ 
+     function removeCookie(cookie) {
+         return new Promise(resolve => {
+-            const cookieToRemove = {
+-                url: cookieRemovalUrl(cookie),
+-                name: cookie.name,
+-                storeId: cookie.storeId
+-            };
+-            if (cookie.partitionKey) cookieToRemove.partitionKey = cookie.partitionKey;
+-            chrome.cookies.remove(cookieToRemove, details => {
+-                resolve({ ok: !chrome.runtime.lastError && !!details, error: chrome.runtime.lastError?.message });
+-            });
++            const details = { url: cookieRemovalUrl(cookie), name: cookie.name, storeId: cookie.storeId };
++            if (cookie.partitionKey) details.partitionKey = cookie.partitionKey;
++            chrome.cookies.remove(details, removed => resolve(!chrome.runtime.lastError && !!removed));
+         });
+     }
+ 
+-    async function handleDelete(key, type, element) {
+-        if (type === 'cookie') {
+-            const originalData = element.dataObject;
+-            const result = await removeCookie(originalData);
+-            if (result.ok) {
+-                element.remove();
+-                currentData.cookies = currentData.cookies.filter(cookie => cookie !== originalData);
+-            } else {
+-                showBanner(`${i18n.getMessage('deleteFailed')}: ${result.error || key}`, 'error');
+-            }
+-        } else if (type === 'localStorage') {
+-            chrome.scripting.executeScript(
+-                { target: { tabId: activeTab.id }, func: (k) => localStorage.removeItem(k), args: [key] },
+-                () => {
+-                    if (!chrome.runtime.lastError) {
+-                        element.remove();
+-                        delete currentData.localStorage[key];
+-                    } else {
+-                        showBanner(`${i18n.getMessage('deleteFailed')}: ${chrome.runtime.lastError.message}`, 'error');
+-                    }
+-                }
+-            );
++    async function deleteItem(item, sectionId) {
++        try {
++            let deleted = false;
++            if (sectionId === 'cookies') deleted = await removeCookie(item);
++            else if (sectionId === 'localStorage' || sectionId === 'sessionStorage') {
++                deleted = await executeOnPage((storageType, name) => { window[storageType].removeItem(name); return true; }, [sectionId, item.name]);
++            } else if (sectionId === 'indexedDB') {
++                deleted = await executeOnPage(name => new Promise(resolve => {
++                    const request = indexedDB.deleteDatabase(name);
++                    request.onsuccess = () => resolve(true);
++                    request.onerror = () => resolve(false);
++                    request.onblocked = () => resolve(false);
++                }), [item.name]);
++            } else if (sectionId === 'cacheStorage') deleted = await executeOnPage(name => caches.delete(name), [item.name]);
++            else if (sectionId === 'serviceWorkers') deleted = await executeOnPage(async scope => {
++                const registrations = await navigator.serviceWorker.getRegistrations();
++                const registration = registrations.find(candidate => candidate.scope === scope);
++                return registration ? registration.unregister() : true;
++            }, [item.name]);
++            else if (sectionId === 'fileSystem') deleted = await executeOnPage(async name => {
++                const root = await navigator.storage.getDirectory();
++                await root.removeEntry(name, { recursive: true });
++                return true;
++            }, [item.name]);
++
++            if (!deleted) throw new Error(i18n.getMessage('deleteFailed'));
++            currentData[sectionId] = currentData[sectionId].filter(candidate => candidate !== item);
++            renderWorkspace();
++        } catch (error) {
++            showBanner(`${i18n.getMessage('deleteFailed')}: ${error.message}`, 'error');
+         }
+     }
+ 
+-    // showError is deprecated. Use showBanner for consistent error display.
+-    // function showError(message) {
+-    //     document.body.innerHTML = `<div style="padding: 10px; text-align: center; color: #555;">${message}</div>`;
+-    // }
+-
+-    function addSectionButtons(cookies, localStorageObj) {
+-      const host = activeTab ? new URL(activeTab.url).hostname : 'site';
+-
+-      const cookiesHeader = document.querySelector('#cookies-section h2');
+-      const ckBtn = document.createElement('button');
+-      ckBtn.className = 'action-btn';
+-      ckBtn.textContent = i18n.getMessage('exportAllButtonLabel');
+-      ckBtn.title = i18n.getMessage('exportAllCookiesTitle');
+-      ckBtn.style.marginLeft = '8px';
+-      ckBtn.onclick = () => {
+-        const file = `${safe(host)}_cookies_${nowStamp()}.json`;
+-        downloadText(file, JSON.stringify(cookies ?? [], null, 2));
+-      };
+-      if (cookiesHeader) cookiesHeader.appendChild(ckBtn);
+-
+-      const ckDeleteBtn = document.createElement('button');
+-      ckDeleteBtn.className = 'action-btn danger-btn';
+-      ckDeleteBtn.textContent = i18n.getMessage('deleteAllButtonLabel');
+-      ckDeleteBtn.title = i18n.getMessage('deleteAllCookiesTitle');
+-      ckDeleteBtn.disabled = !cookies?.length;
+-      ckDeleteBtn.onclick = async () => {
+-        if (!confirm(i18n.getMessage('confirmDeleteAllCookies'))) return;
+-        ckDeleteBtn.disabled = true;
+-        const results = await Promise.all(currentData.cookies.map(removeCookie));
+-        const failed = results.filter(result => !result.ok).length;
+-        if (failed) {
+-          showBanner(i18n.getMessage('deleteAllPartial').replace('$1', String(failed)), 'error');
+-          ckDeleteBtn.disabled = false;
+-        } else {
+-          currentData.cookies = [];
+-          cookiesList.innerHTML = `<div class="data-item">${i18n.getMessage('noCookies')}</div>`;
+-          showToast(i18n.getMessage('deleteAllComplete'));
+-          handleSearch();
++    async function clearSection(sectionId) {
++        const section = sectionDefinitions.find(candidate => candidate.id === sectionId);
++        if (!confirm(i18n.getMessage('confirmDeleteSection').replace('$1', i18n.getMessage(section.label)))) return;
++        const items = [...currentData[sectionId]];
++        let failed = 0;
++        for (const item of items) {
++            try {
++                const before = currentData[sectionId].length;
++                await deleteItem(item, sectionId);
++                if (currentData[sectionId].length === before) failed++;
++            } catch { failed++; }
+         }
+-      };
+-      if (cookiesHeader) cookiesHeader.appendChild(ckDeleteBtn);
+-
+-      const lsHeader = document.querySelector('#localstorage-section h2');
+-      const lsBtn = document.createElement('button');
+-      lsBtn.className = 'action-btn';
+-      lsBtn.textContent = i18n.getMessage('exportAllButtonLabel');
+-      lsBtn.title = i18n.getMessage('exportAllLSTitle');
+-      lsBtn.style.marginLeft = '8px';
+-      lsBtn.onclick = () => {
+-        const pairs = Object.keys(localStorageObj || {}).map(k => ({ name: k, value: localStorageObj[k] }));
+-        const file = `${safe(host)}_localStorage_${nowStamp()}.json`;
+-        downloadText(file, JSON.stringify(pairs, null, 2));
+-      };
+-      if (lsHeader) lsHeader.appendChild(lsBtn);
+-
+-      const lsDeleteBtn = document.createElement('button');
+-      lsDeleteBtn.className = 'action-btn danger-btn';
+-      lsDeleteBtn.textContent = i18n.getMessage('deleteAllButtonLabel');
+-      lsDeleteBtn.title = i18n.getMessage('deleteAllLSTitle');
+-      lsDeleteBtn.disabled = Object.keys(localStorageObj || {}).length === 0;
+-      lsDeleteBtn.onclick = () => {
+-        if (!confirm(i18n.getMessage('confirmDeleteAllLS'))) return;
+-        lsDeleteBtn.disabled = true;
+-        chrome.scripting.executeScript({
+-          target: { tabId: activeTab.id },
+-          func: () => localStorage.clear()
+-        }, () => {
+-          if (chrome.runtime.lastError) {
+-            showBanner(`${i18n.getMessage('deleteFailed')}: ${chrome.runtime.lastError.message}`, 'error');
+-            lsDeleteBtn.disabled = false;
+-          } else {
+-            currentData.localStorage = {};
+-            localStorageList.innerHTML = `<div class="data-item">${i18n.getMessage('noLocalStorage')}</div>`;
+-            showToast(i18n.getMessage('deleteAllComplete'));
+-            handleSearch();
+-          }
++        if (!failed) showToast(i18n.getMessage('deleteAllComplete'));
++    }
++
++    function clearBrowsingData(origin) {
++        return new Promise((resolve, reject) => {
++            chrome.browsingData.remove(
++                { origins: [origin] },
++                { cookies: true, localStorage: true, indexedDB: true, cacheStorage: true, serviceWorkers: true, fileSystems: true },
++                () => chrome.runtime.lastError ? reject(new Error(chrome.runtime.lastError.message)) : resolve()
++            );
+         });
+-      };
+-      if (lsHeader) lsHeader.appendChild(lsDeleteBtn);
+     }
+ 
+-    // --- 4. Initializer ---
+-    async function main() {
+-        await loadMessages();
+-        const languageSelector = document.getElementById('language-selector');
+-        languageSelector.addEventListener('change', (event) => {
+-            const selectedLang = event.target.value;
+-            chrome.storage.sync.set({ userLanguage: selectedLang }, async () => {
+-                // Ensure messages for the selected language are loaded
+-                await loadMessages(); // Re-load all messages
+-                localizeHtmlPage(selectedLang);
+-                if (currentData) {
+-                    const data = currentData;
+-                    cookiesList.innerHTML = data.cookies.length ? '' : `<div class="data-item">${i18n.getMessage('noCookies')}</div>`;
+-                    if (data.cookies.length) renderList(cookiesList, data.cookies, cookie => createDataItem(cookie, 'cookie'));
+-                    const lsItems = Object.keys(data.localStorage).map(key => ({ name: key, value: data.localStorage[key] }));
+-                    localStorageList.innerHTML = lsItems.length ? '' : `<div class="data-item">${i18n.getMessage('noLocalStorage')}</div>`;
+-                    if (lsItems.length) renderList(localStorageList, lsItems, item => createDataItem(item, 'localStorage'));
+-                    addSectionButtons(data.cookies, data.localStorage);
+-                    handleSearch();
++    async function deleteAllSiteData() {
++        if (!confirm(i18n.getMessage('confirmDeleteSiteData'))) return;
++        const button = document.getElementById('delete-site-data-btn');
++        button.disabled = true;
++        try {
++            await Promise.all(currentData.cookies.map(removeCookie));
++            await executeOnPage(async () => {
++                localStorage.clear();
++                sessionStorage.clear();
++                if (typeof indexedDB.databases === 'function') {
++                    for (const database of await indexedDB.databases()) {
++                        if (database.name) indexedDB.deleteDatabase(database.name);
++                    }
++                }
++                if ('caches' in globalThis) await Promise.all((await caches.keys()).map(name => caches.delete(name)));
++                if ('serviceWorker' in navigator) await Promise.all((await navigator.serviceWorker.getRegistrations()).map(registration => registration.unregister()));
++                if (navigator.storage?.getDirectory) {
++                    const root = await navigator.storage.getDirectory();
++                    for await (const [name] of root.entries()) await root.removeEntry(name, { recursive: true });
+                 }
+             });
+-        });
++            await clearBrowsingData(new URL(activeTab.url).origin);
++            for (const section of sectionDefinitions) {
++                if (section.mutable) currentData[section.id] = [];
++            }
++            renderWorkspace();
++            showBanner(i18n.getMessage('siteDataDeleted'), 'info');
++            chrome.tabs.reload(activeTab.id);
++        } catch (error) {
++            showBanner(`${i18n.getMessage('deleteFailed')}: ${error.message}`, 'error');
++            button.disabled = false;
++        }
++    }
+ 
+-        const { userLanguage } = await chrome.storage.sync.get('userLanguage');
+-        const browserLang = chrome.i18n.getUILanguage().split('-')[0];
+-        const lang = userLanguage || (languages.includes(browserLang) ? browserLang : 'en');
+-        languageSelector.value = lang;
+-        localizeHtmlPage(lang);
+-        initializePopup();
++    function applySearch() {
++        const term = searchBox.value.trim().toLowerCase();
++        listElement.querySelectorAll('.data-item').forEach(row => row.classList.toggle('hidden', !row.dataset.search.includes(term)));
+     }
+ 
+-    // Setup resizer
+-    const resizer = document.getElementById('resizer');
+-    const cookiesSection = document.getElementById('cookies-section');
+-    const localStorageSection = document.getElementById('localstorage-section');
+-    const listWrapper = document.querySelector('.list-wrapper');
+-    let isResizing = false;
+-    resizer.addEventListener('mousedown', () => { isResizing = true; document.body.style.cursor = 'ns-resize'; listWrapper.style.userSelect = 'none'; });
+-    document.addEventListener('mousemove', (e) => {
+-        if (!isResizing) return;
+-        const totalHeight = listWrapper.getBoundingClientRect().height;
+-        const newCookiesHeight = (e.clientY - listWrapper.getBoundingClientRect().top) / totalHeight * 100;
+-        if (newCookiesHeight > 10 && newCookiesHeight < 90) {
+-            cookiesSection.style.flexBasis = `${newCookiesHeight}%`;
+-            localStorageSection.style.flexBasis = `${100 - newCookiesHeight}%`;
+-        }
+-    });
+-    document.addEventListener('mouseup', () => { isResizing = false; document.body.style.cursor = 'default'; listWrapper.style.userSelect = ''; });
+-    searchBox.addEventListener('input', debounce(handleSearch, 150));
+-
+-    // --- Display Version ---
+-    const manifest = chrome.runtime.getManifest();
+-    const versionElement = document.getElementById('version-display');
+-    if (versionElement) {
+-        versionElement.textContent = `Version ${manifest.version}`;
++    function debounce(func, delay) {
++        let timer;
++        return (...args) => {
++            clearTimeout(timer);
++            timer = setTimeout(() => func(...args), delay);
++        };
++    }
++
++    function initializeTabInfo() {
++        const params = new URLSearchParams(location.search);
++        const id = Number(params.get('tabId'));
++        const url = params.get('url') || '';
++        if (!id || !url) throw new Error(i18n.getMessage('errorTabId'));
++        activeTab = { id, url, title: params.get('title') || '' };
++        document.getElementById('tab-title').textContent = activeTab.title || activeTab.url;
++        const urlElement = document.getElementById('tab-url');
++        urlElement.textContent = new URL(activeTab.url).hostname;
++        urlElement.href = activeTab.url;
++        document.getElementById('fetch-time').textContent = `${i18n.getMessage('fetchedAt')} ${new Date().toLocaleTimeString()}`;
++    }
++
++    async function main() {
++        await loadMessages();
++        const languageSelector = document.getElementById('language-selector');
++        const { userLanguage } = await chrome.storage.sync.get('userLanguage');
++        const browserLanguage = chrome.i18n.getUILanguage().split('-')[0];
++        currentLang = userLanguage || (languages.includes(browserLanguage) ? browserLanguage : 'en');
++        languageSelector.value = currentLang;
++        localizeHtmlPage(currentLang);
++        initializeTabInfo();
++        await loadData();
++
++        languageSelector.addEventListener('change', event => {
++            chrome.storage.sync.set({ userLanguage: event.target.value });
++            localizeHtmlPage(event.target.value);
++        });
++        searchBox.addEventListener('input', debounce(applySearch, 120));
++        document.getElementById('delete-site-data-btn').addEventListener('click', deleteAllSiteData);
++        document.getElementById('version-display').textContent = `Version ${chrome.runtime.getManifest().version}`;
+     }
+ 
+-    main();
++    main().catch(error => showBanner(error.message, 'error'));
+ });
