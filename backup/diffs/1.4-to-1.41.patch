@@ -1,0 +1,197 @@
+diff --git a/1.4/_locales/es/messages.json b/1.41/_locales/es/messages.json
+index b594eab..4078414 100644
+--- a/1.4/_locales/es/messages.json
++++ b/1.41/_locales/es/messages.json
+@@ -78,5 +78,40 @@
+             "privacyNotice": {
+               "message": " | Esta extensión no envía ningún dato al exterior.",
+               "description": "Privacy notice text."
+-            }
++            },
++            "copyButtonLabel": { "message": "Copiar", "description": "Botón para copiar." },
++            "saveButtonLabel": { "message": "Exportar", "description": "Botón para exportar." },
++            "copiedToast": { "message": "Copiado al portapapeles", "description": "Mensaje de copia completada." },
++            "savedToast": { "message": "Guardado como archivo", "description": "Mensaje de exportación completada." },
++            "exportAllButtonLabel": { "message": "Exportar todo", "description": "Botón para exportar todo." },
++            "exportAllCookiesTitle": { "message": "Exportar todas las cookies", "description": "Ayuda para exportar cookies." },
++            "exportAllLSTitle": { "message": "Exportar todo el almacenamiento local", "description": "Ayuda para exportar almacenamiento local." },
++            "deleteAllButtonLabel": { "message": "Eliminar todo", "description": "Botón para eliminar todo." },
++            "deleteAllCookiesTitle": { "message": "Eliminar todas las cookies mostradas de este sitio", "description": "Ayuda para eliminar cookies." },
++            "deleteAllLSTitle": { "message": "Borrar el almacenamiento local de este origen", "description": "Ayuda para borrar almacenamiento local." },
++            "confirmDeleteAllCookies": { "message": "¿Eliminar todas las cookies mostradas? Esta acción no se puede deshacer.", "description": "Confirmación para eliminar cookies." },
++            "confirmDeleteAllLS": { "message": "¿Borrar todo el almacenamiento local de este origen? Esta acción no se puede deshacer.", "description": "Confirmación para borrar almacenamiento local." },
++            "deleteAllComplete": { "message": "Se eliminaron todos los elementos", "description": "Mensaje de eliminación completada." },
++            "deleteAllPartial": { "message": "No se pudieron eliminar $1 elemento(s).", "description": "Error de eliminación parcial." },
++            "deleteFailed": { "message": "Error al eliminar", "description": "Prefijo de error de eliminación." },
++            "tooltipHttpOnlyWarning": { "message": "Los scripts de la página no pueden editar las cookies HttpOnly, pero esta extensión puede eliminarlas mediante la API de cookies del navegador.", "description": "Información sobre HttpOnly." },
++            "sessionStorageTitle": { "message": "Almacenamiento de sesión", "description": "Pestaña de almacenamiento de sesión." },
++            "indexedDBTitle": { "message": "IndexedDB", "description": "Pestaña de IndexedDB." },
++            "cacheStorageTitle": { "message": "Almacenamiento de caché", "description": "Pestaña de almacenamiento de caché." },
++            "serviceWorkersTitle": { "message": "Service Workers", "description": "Pestaña de Service Workers." },
++            "fileSystemTitle": { "message": "Sistema de archivos", "description": "Pestaña del sistema de archivos privado." },
++            "storageOverviewTitle": { "message": "Resumen", "description": "Pestaña de resumen del almacenamiento." },
++            "errorsTitle": { "message": "Errores", "description": "Pestaña de errores." },
++            "noSessionStorage": { "message": "No se encontraron elementos en el almacenamiento de sesión.", "description": "Mensaje de almacenamiento de sesión vacío." },
++            "noIndexedDB": { "message": "No se encontraron bases de datos IndexedDB.", "description": "Mensaje de IndexedDB vacío." },
++            "noCacheStorage": { "message": "No se encontraron elementos en el almacenamiento de caché.", "description": "Mensaje de caché vacía." },
++            "noServiceWorkers": { "message": "No se encontraron Service Workers.", "description": "Mensaje de Service Workers vacío." },
++            "noFileSystem": { "message": "No se encontraron archivos privados del origen.", "description": "Mensaje de sistema de archivos vacío." },
++            "noStorageOverview": { "message": "La información de uso del almacenamiento no está disponible.", "description": "Mensaje de resumen vacío." },
++            "noErrors": { "message": "No hay errores de recopilación.", "description": "Mensaje sin errores." },
++            "confirmDeleteSection": { "message": "¿Eliminar todos los datos de $1 mostrados en esta pestaña? Esta acción no se puede deshacer.", "description": "Confirmación para borrar una sección." },
++            "deleteSiteDataButton": { "message": "Eliminar todos los datos del sitio", "description": "Botón para eliminar todos los datos del sitio." },
++            "confirmDeleteSiteData": { "message": "¿Eliminar las cookies, el almacenamiento web, IndexedDB, las cachés, los Service Workers y los archivos privados de este sitio? La página se recargará y esta acción no se puede deshacer.", "description": "Confirmación para eliminar todos los datos del sitio." },
++            "siteDataDeleted": { "message": "Se eliminaron todos los datos disponibles del sitio. La página se está recargando.", "description": "Mensaje de eliminación completa." },
++            "saveFailed": { "message": "Error al guardar", "description": "Prefijo de error al guardar." }
+           }
+diff --git a/1.4/_locales/ja/messages.json b/1.41/_locales/ja/messages.json
+index 8eeb662..0f8032c 100644
+--- a/1.4/_locales/ja/messages.json
++++ b/1.41/_locales/ja/messages.json
+@@ -78,5 +78,40 @@
+             "privacyNotice": {
+               "message": " | 本拡張機能は、いかなるデータも外部へ送信しません。",
+               "description": "Privacy notice text."
+-            }
++            },
++            "copyButtonLabel": { "message": "コピー", "description": "コピーボタンです。" },
++            "saveButtonLabel": { "message": "エクスポート", "description": "エクスポートボタンです。" },
++            "copiedToast": { "message": "クリップボードにコピーしました", "description": "コピー完了メッセージです。" },
++            "savedToast": { "message": "ファイルとして保存しました", "description": "エクスポート完了メッセージです。" },
++            "exportAllButtonLabel": { "message": "すべてエクスポート", "description": "一括エクスポートボタンです。" },
++            "exportAllCookiesTitle": { "message": "すべてのCookieをエクスポート", "description": "Cookieエクスポートの説明です。" },
++            "exportAllLSTitle": { "message": "ローカルストレージをすべてエクスポート", "description": "ローカルストレージエクスポートの説明です。" },
++            "deleteAllButtonLabel": { "message": "すべて削除", "description": "一括削除ボタンです。" },
++            "deleteAllCookiesTitle": { "message": "このサイトに表示されたCookieをすべて削除", "description": "Cookie一括削除の説明です。" },
++            "deleteAllLSTitle": { "message": "このオリジンのローカルストレージを消去", "description": "ローカルストレージ一括削除の説明です。" },
++            "confirmDeleteAllCookies": { "message": "表示されたCookieをすべて削除しますか？この操作は元に戻せません。", "description": "Cookie一括削除の確認です。" },
++            "confirmDeleteAllLS": { "message": "このオリジンのローカルストレージをすべて消去しますか？この操作は元に戻せません。", "description": "ローカルストレージ削除の確認です。" },
++            "deleteAllComplete": { "message": "すべての項目を削除しました", "description": "一括削除完了メッセージです。" },
++            "deleteAllPartial": { "message": "$1件の項目を削除できませんでした。", "description": "一部削除失敗メッセージです。" },
++            "deleteFailed": { "message": "削除に失敗しました", "description": "削除エラーです。" },
++            "tooltipHttpOnlyWarning": { "message": "HttpOnly Cookieはページスクリプトから編集できませんが、本拡張機能はブラウザのCookie APIを使用して削除できます。", "description": "HttpOnlyの説明です。" },
++            "sessionStorageTitle": { "message": "セッションストレージ", "description": "セッションストレージタブです。" },
++            "indexedDBTitle": { "message": "IndexedDB", "description": "IndexedDBタブです。" },
++            "cacheStorageTitle": { "message": "キャッシュストレージ", "description": "キャッシュストレージタブです。" },
++            "serviceWorkersTitle": { "message": "サービスワーカー", "description": "サービスワーカータブです。" },
++            "fileSystemTitle": { "message": "ファイルシステム", "description": "オリジン専用ファイルシステムタブです。" },
++            "storageOverviewTitle": { "message": "概要", "description": "ストレージ概要タブです。" },
++            "errorsTitle": { "message": "エラー", "description": "収集エラータブです。" },
++            "noSessionStorage": { "message": "セッションストレージの項目はありません。", "description": "空のセッションストレージメッセージです。" },
++            "noIndexedDB": { "message": "IndexedDBデータベースはありません。", "description": "空のIndexedDBメッセージです。" },
++            "noCacheStorage": { "message": "キャッシュストレージの項目はありません。", "description": "空のキャッシュメッセージです。" },
++            "noServiceWorkers": { "message": "サービスワーカーはありません。", "description": "空のサービスワーカーメッセージです。" },
++            "noFileSystem": { "message": "オリジン専用ファイルはありません。", "description": "空のファイルシステムメッセージです。" },
++            "noStorageOverview": { "message": "ストレージ使用状況を取得できません。", "description": "空の概要メッセージです。" },
++            "noErrors": { "message": "データ収集エラーはありません。", "description": "エラーなしメッセージです。" },
++            "confirmDeleteSection": { "message": "このタブに表示された$1のデータをすべて削除しますか？この操作は元に戻せません。", "description": "セクション削除の確認です。" },
++            "deleteSiteDataButton": { "message": "サイトデータをすべて削除", "description": "サイトデータ一括削除ボタンです。" },
++            "confirmDeleteSiteData": { "message": "このサイトのCookie、Webストレージ、IndexedDB、キャッシュ、サービスワーカー、専用ファイルをすべて削除しますか？ページが再読み込みされ、この操作は元に戻せません。", "description": "サイトデータ一括削除の確認です。" },
++            "siteDataDeleted": { "message": "削除可能なサイトデータをすべて削除しました。ページを再読み込みします。", "description": "一括削除完了メッセージです。" },
++            "saveFailed": { "message": "保存に失敗しました", "description": "保存エラーです。" }
+           }
+diff --git a/1.4/_locales/ru/messages.json b/1.41/_locales/ru/messages.json
+index 5837ea8..7cc505c 100644
+--- a/1.4/_locales/ru/messages.json
++++ b/1.41/_locales/ru/messages.json
+@@ -78,5 +78,40 @@
+           "privacyNotice": {
+             "message": " | Это расширение не передаёт никакие данные внешним сервисам.",
+             "description": "Privacy notice text."
+-          }
++          },
++          "copyButtonLabel": { "message": "Копировать", "description": "Кнопка копирования." },
++          "saveButtonLabel": { "message": "Экспорт", "description": "Кнопка экспорта." },
++          "copiedToast": { "message": "Скопировано в буфер обмена", "description": "Сообщение о завершении копирования." },
++          "savedToast": { "message": "Сохранено в файл", "description": "Сообщение о завершении экспорта." },
++          "exportAllButtonLabel": { "message": "Экспортировать всё", "description": "Кнопка экспорта всех данных." },
++          "exportAllCookiesTitle": { "message": "Экспортировать все cookie", "description": "Подсказка экспорта cookie." },
++          "exportAllLSTitle": { "message": "Экспортировать всё локальное хранилище", "description": "Подсказка экспорта локального хранилища." },
++          "deleteAllButtonLabel": { "message": "Удалить всё", "description": "Кнопка удаления всех данных." },
++          "deleteAllCookiesTitle": { "message": "Удалить все показанные cookie этого сайта", "description": "Подсказка удаления cookie." },
++          "deleteAllLSTitle": { "message": "Очистить локальное хранилище этого источника", "description": "Подсказка очистки локального хранилища." },
++          "confirmDeleteAllCookies": { "message": "Удалить все показанные cookie? Это действие нельзя отменить.", "description": "Подтверждение удаления cookie." },
++          "confirmDeleteAllLS": { "message": "Очистить всё локальное хранилище этого источника? Это действие нельзя отменить.", "description": "Подтверждение очистки локального хранилища." },
++          "deleteAllComplete": { "message": "Все элементы удалены", "description": "Сообщение о завершении удаления." },
++          "deleteAllPartial": { "message": "Не удалось удалить элементов: $1.", "description": "Ошибка частичного удаления." },
++          "deleteFailed": { "message": "Не удалось удалить", "description": "Префикс ошибки удаления." },
++          "tooltipHttpOnlyWarning": { "message": "Скрипты страницы не могут изменять cookie HttpOnly, но это расширение может удалять их через API cookie браузера.", "description": "Информация о HttpOnly." },
++          "sessionStorageTitle": { "message": "Сеансовое хранилище", "description": "Вкладка сеансового хранилища." },
++          "indexedDBTitle": { "message": "IndexedDB", "description": "Вкладка IndexedDB." },
++          "cacheStorageTitle": { "message": "Хранилище кэша", "description": "Вкладка хранилища кэша." },
++          "serviceWorkersTitle": { "message": "Сервис-воркеры", "description": "Вкладка сервис-воркеров." },
++          "fileSystemTitle": { "message": "Файловая система", "description": "Вкладка приватной файловой системы источника." },
++          "storageOverviewTitle": { "message": "Обзор", "description": "Вкладка обзора хранилища." },
++          "errorsTitle": { "message": "Ошибки", "description": "Вкладка ошибок сбора данных." },
++          "noSessionStorage": { "message": "Элементы сеансового хранилища не найдены.", "description": "Сообщение о пустом сеансовом хранилище." },
++          "noIndexedDB": { "message": "Базы данных IndexedDB не найдены.", "description": "Сообщение о пустом IndexedDB." },
++          "noCacheStorage": { "message": "Элементы хранилища кэша не найдены.", "description": "Сообщение о пустом кэше." },
++          "noServiceWorkers": { "message": "Сервис-воркеры не найдены.", "description": "Сообщение об отсутствии сервис-воркеров." },
++          "noFileSystem": { "message": "Приватные файлы источника не найдены.", "description": "Сообщение о пустой файловой системе." },
++          "noStorageOverview": { "message": "Информация об использовании хранилища недоступна.", "description": "Сообщение о недоступном обзоре." },
++          "noErrors": { "message": "Ошибок сбора данных нет.", "description": "Сообщение об отсутствии ошибок." },
++          "confirmDeleteSection": { "message": "Удалить все данные «$1», показанные на этой вкладке? Это действие нельзя отменить.", "description": "Подтверждение очистки раздела." },
++          "deleteSiteDataButton": { "message": "Удалить все данные сайта", "description": "Кнопка удаления всех данных сайта." },
++          "confirmDeleteSiteData": { "message": "Удалить cookie, веб-хранилище, IndexedDB, кэш, сервис-воркеры и приватные файлы этого сайта? Страница перезагрузится, и действие нельзя отменить.", "description": "Подтверждение удаления всех данных сайта." },
++          "siteDataDeleted": { "message": "Все доступные данные сайта удалены. Страница перезагружается.", "description": "Сообщение о полном удалении." },
++          "saveFailed": { "message": "Не удалось сохранить", "description": "Префикс ошибки сохранения." }
+         }
+diff --git a/1.4/_locales/zh_CN/messages.json b/1.41/_locales/zh_CN/messages.json
+index b418874..d7b0356 100644
+--- a/1.4/_locales/zh_CN/messages.json
++++ b/1.41/_locales/zh_CN/messages.json
+@@ -78,5 +78,40 @@
+             "privacyNotice": {
+               "message": " | 本扩展不会向外部发送任何数据。",
+               "description": "Privacy notice text."
+-            }
++            },
++            "copyButtonLabel": { "message": "复制", "description": "复制按钮。" },
++            "saveButtonLabel": { "message": "导出", "description": "导出按钮。" },
++            "copiedToast": { "message": "已复制到剪贴板", "description": "复制完成提示。" },
++            "savedToast": { "message": "已保存为文件", "description": "导出完成提示。" },
++            "exportAllButtonLabel": { "message": "全部导出", "description": "全部导出按钮。" },
++            "exportAllCookiesTitle": { "message": "导出所有 Cookie", "description": "Cookie 导出提示。" },
++            "exportAllLSTitle": { "message": "导出所有本地存储数据", "description": "本地存储导出提示。" },
++            "deleteAllButtonLabel": { "message": "全部删除", "description": "全部删除按钮。" },
++            "deleteAllCookiesTitle": { "message": "删除此网站显示的所有 Cookie", "description": "Cookie 全部删除提示。" },
++            "deleteAllLSTitle": { "message": "清除此来源的本地存储", "description": "本地存储全部删除提示。" },
++            "confirmDeleteAllCookies": { "message": "要删除显示的所有 Cookie 吗？此操作无法撤销。", "description": "Cookie 删除确认。" },
++            "confirmDeleteAllLS": { "message": "要清除此来源的所有本地存储数据吗？此操作无法撤销。", "description": "本地存储清除确认。" },
++            "deleteAllComplete": { "message": "已删除所有项目", "description": "全部删除完成提示。" },
++            "deleteAllPartial": { "message": "有 $1 个项目无法删除。", "description": "部分删除失败提示。" },
++            "deleteFailed": { "message": "删除失败", "description": "删除错误提示。" },
++            "tooltipHttpOnlyWarning": { "message": "页面脚本无法编辑 HttpOnly Cookie，但本扩展可以通过浏览器 Cookie API 删除它们。", "description": "HttpOnly 说明。" },
++            "sessionStorageTitle": { "message": "会话存储", "description": "会话存储标签页。" },
++            "indexedDBTitle": { "message": "IndexedDB", "description": "IndexedDB 标签页。" },
++            "cacheStorageTitle": { "message": "缓存存储", "description": "缓存存储标签页。" },
++            "serviceWorkersTitle": { "message": "Service Worker", "description": "Service Worker 标签页。" },
++            "fileSystemTitle": { "message": "文件系统", "description": "来源专用文件系统标签页。" },
++            "storageOverviewTitle": { "message": "概览", "description": "存储概览标签页。" },
++            "errorsTitle": { "message": "错误", "description": "数据收集错误标签页。" },
++            "noSessionStorage": { "message": "未找到会话存储项目。", "description": "会话存储为空时的提示。" },
++            "noIndexedDB": { "message": "未找到 IndexedDB 数据库。", "description": "IndexedDB 为空时的提示。" },
++            "noCacheStorage": { "message": "未找到缓存存储项目。", "description": "缓存存储为空时的提示。" },
++            "noServiceWorkers": { "message": "未找到 Service Worker。", "description": "Service Worker 为空时的提示。" },
++            "noFileSystem": { "message": "未找到来源专用文件。", "description": "文件系统为空时的提示。" },
++            "noStorageOverview": { "message": "无法获取存储使用信息。", "description": "存储概览不可用时的提示。" },
++            "noErrors": { "message": "没有数据收集错误。", "description": "无错误提示。" },
++            "confirmDeleteSection": { "message": "要删除此标签页中显示的所有“$1”数据吗？此操作无法撤销。", "description": "分区清除确认。" },
++            "deleteSiteDataButton": { "message": "删除所有网站数据", "description": "网站数据全部删除按钮。" },
++            "confirmDeleteSiteData": { "message": "要删除此网站的 Cookie、Web 存储、IndexedDB、缓存、Service Worker 和专用文件吗？页面将重新加载，且此操作无法撤销。", "description": "网站数据全部删除确认。" },
++            "siteDataDeleted": { "message": "已删除所有可用的网站数据。页面正在重新加载。", "description": "全部删除完成提示。" },
++            "saveFailed": { "message": "保存失败", "description": "保存错误提示。" }
+           }
+diff --git a/1.4/manifest.json b/1.41/manifest.json
+index 5de7418..8f7ff1b 100644
+--- a/1.4/manifest.json
++++ b/1.41/manifest.json
+@@ -1,7 +1,7 @@
+ {
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+-  "version": "1.4",
++  "version": "1.41",
+   "description": "__MSG_extDescription__",
+   "default_locale": "en",
+   "author": "JellyKingStudio",

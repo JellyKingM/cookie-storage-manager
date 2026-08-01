@@ -1,0 +1,82 @@
+{
+  "extName": {
+    "message": "Administrador de Almacenamiento de Cookies",
+    "description": "The name of the extension."
+  },
+  "extDescription": {
+    "message": "Un administrador simple para cookies y almacenamiento local en la página actual.",
+    "description": "The description of the extension."
+  },
+  "sponsorLink": {
+    "message": "Apóyame",
+    "description": "Sponsor link text."
+  },
+  "searchPlaceholder": {
+    "message": "Buscar por clave o valor...",
+    "description": "Placeholder for the search box."
+  },
+  "cookiesTitle": {
+    "message": "Cookies",
+    "description": "Title for the cookies section."
+  },
+  "localStorageTitle": {
+    "message": "Almacenamiento Local",
+    "description": "Title for the local storage section."
+  },
+  "footerText": {
+    "message": "Hecho por JellyKingStudio",
+    "description": "Footer text."
+  },
+  "errorTabId": {
+    "message": "ID de pestaña no encontrado. Cierre esta ventana y vuelva a hacer clic en el icono de la extensión.",
+    "description": "Error message when tab ID is not found."
+  },
+  "errorTabInfo": {
+    "message": "No se pudo obtener la información de la pestaña. Es posible que la pestaña original se haya cerrado.",
+    "description": "Error message when tab info cannot be retrieved."
+  },
+  "errorAccess": {
+    "message": "No se puede acceder al almacenamiento de esta página (por ejemplo, páginas del sistema o pestañas nuevas).",
+    "description": "Error message when storage access is denied."
+  },
+  "noCookies": {
+    "message": "No se encontraron cookies.",
+    "description": "Message when no cookies are found."
+  },
+  "errorLocalStorage": {
+    "message": "No se pudo acceder al almacenamiento local.",
+    "description": "Error message when local storage is inaccessible."
+  },
+  "noLocalStorage": {
+    "message": "No se encontraron elementos de almacenamiento local.",
+    "description": "Message when no local storage items are found."
+  },
+  "editButton": {
+    "message": "Editar",
+    "description": "Title for the edit button."
+  },
+  "saveButton": {
+    "message": "Guardar",
+    "description": "Title for the save button."
+  },
+  "deleteButton": {
+    "message": "Eliminar",
+    "description": "Title for the delete button."
+  },
+  "fetchedAt": {
+    "message": "Obtenido a las:",
+    "description": "Prefix for the time when data was fetched."
+  },
+  "showMore": {
+    "message": "Mostrar más",
+    "description": "Button text to expand a collapsed text area."
+  },
+            "showLess": {
+              "message": "Mostrar menos",
+              "description": "Button text to collapse an expanded text area."
+            },
+            "privacyNotice": {
+              "message": " | Esta extensión no envía ningún dato al exterior.",
+              "description": "Privacy notice text."
+            }
+          }

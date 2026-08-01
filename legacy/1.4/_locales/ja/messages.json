@@ -1,0 +1,82 @@
+{
+  "extName": {
+    "message": "クッキーストレージマネージャー",
+    "description": "The name of the extension."
+  },
+  "extDescription": {
+    "message": "現在のページのCookieとローカルストレージを管理するシンプルなマネージャーです。",
+    "description": "The description of the extension."
+  },
+  "sponsorLink": {
+    "message": "サポート",
+    "description": "Sponsor link text."
+  },
+  "searchPlaceholder": {
+    "message": "キーまたは値で検索...",
+    "description": "Placeholder for the search box."
+  },
+  "cookiesTitle": {
+    "message": "クッキー",
+    "description": "Title for the cookies section."
+  },
+  "localStorageTitle": {
+    "message": "ローカルストレージ",
+    "description": "Title for the local storage section."
+  },
+  "footerText": {
+    "message": "JellyKingStudio作成",
+    "description": "Footer text."
+  },
+  "errorTabId": {
+    "message": "タブIDが見つかりません。このウィンドウを閉じて、拡張機能アイコンをもう一度クリックしてください。",
+    "description": "Error message when tab ID is not found."
+  },
+  "errorTabInfo": {
+    "message": "タブ情報を取得できませんでした。元のタブが閉じられた可能性があります。",
+    "description": "Error message when tab info cannot be retrieved."
+  },
+  "errorAccess": {
+    "message": "このページのストレージにアクセスできません（例：システムページや新しいタブ）。",
+    "description": "Error message when storage access is denied."
+  },
+  "noCookies": {
+    "message": "クッキーが見つかりません。",
+    "description": "Message when no cookies are found."
+  },
+  "errorLocalStorage": {
+    "message": "ローカルストレージにアクセスできませんでした。",
+    "description": "Error message when local storage is inaccessible."
+  },
+  "noLocalStorage": {
+    "message": "ローカルストレージアイテムが見つかりません。",
+    "description": "Message when no local storage items are found."
+  },
+  "editButton": {
+    "message": "編集",
+    "description": "Title for the edit button."
+  },
+  "saveButton": {
+    "message": "保存",
+    "description": "Title for the save button."
+  },
+  "deleteButton": {
+    "message": "削除",
+    "description": "Title for the delete button."
+  },
+  "fetchedAt": {
+    "message": "取得時刻：",
+    "description": "Prefix for the time when data was fetched."
+  },
+  "showMore": {
+    "message": "もっと見る",
+    "description": "Button text to expand a collapsed text area."
+  },
+            "showLess": {
+              "message": "少なく表示",
+              "description": "Button text to collapse an expanded text area."
+            },
+            "privacyNotice": {
+              "message": " | 本拡張機能は、いかなるデータも外部へ送信しません。",
+              "description": "Privacy notice text."
+            }
+          }
