@@ -24,7 +24,7 @@
     "description": "로컬 스토리지 섹션의 제목입니다."
   },
   "footerText": {
-    "message": "Made by JellyKingStudio",
+    "message": "Made by JellyKing",
     "description": "하단 푸터 텍스트입니다."
   },
   "errorTabId": {
@@ -76,7 +76,7 @@
     "description": "Button text to collapse an expanded text area."
   },
   "privacyNotice": {
-    "message": " | 그 어떤 데이터도 외부로 전송하지 않습니다.",
+    "message": " | 로컬/쿠키 데이터는 외부로 전송하지 않습니다.",
     "description": "개인 정보 보호 고지 텍스트입니다."
   },
   "copyButtonLabel": { "message": "복사", "description": "항목 복사 버튼입니다." },

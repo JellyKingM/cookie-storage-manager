@@ -1,82 +1,82 @@
 {
   "extName": {
-    "message": "クッキーストレージマネージャー",
+    "message": "Administrador de Almacenamiento de Cookies",
     "description": "The name of the extension."
   },
   "extDescription": {
-    "message": "現在のページのCookieとローカルストレージを管理するシンプルなマネージャーです。",
+    "message": "Un administrador simple para cookies y almacenamiento local en la página actual.",
     "description": "The description of the extension."
   },
   "sponsorLink": {
-    "message": "サポート",
+    "message": "Apóyame",
     "description": "Sponsor link text."
   },
   "searchPlaceholder": {
-    "message": "キーまたは値で検索...",
+    "message": "Buscar por clave o valor...",
     "description": "Placeholder for the search box."
   },
   "cookiesTitle": {
-    "message": "クッキー",
+    "message": "Cookies",
     "description": "Title for the cookies section."
   },
   "localStorageTitle": {
-    "message": "ローカルストレージ",
+    "message": "Almacenamiento Local",
     "description": "Title for the local storage section."
   },
   "footerText": {
-    "message": "JellyKingStudio作成",
+    "message": "Hecho por JellyKing",
     "description": "Footer text."
   },
   "errorTabId": {
-    "message": "タブIDが見つかりません。このウィンドウを閉じて、拡張機能アイコンをもう一度クリックしてください。",
+    "message": "ID de pestaña no encontrado. Cierre esta ventana y vuelva a hacer clic en el icono de la extensión.",
     "description": "Error message when tab ID is not found."
   },
   "errorTabInfo": {
-    "message": "タブ情報を取得できませんでした。元のタブが閉じられた可能性があります。",
+    "message": "No se pudo obtener la información de la pestaña. Es posible que la pestaña original se haya cerrado.",
     "description": "Error message when tab info cannot be retrieved."
   },
   "errorAccess": {
-    "message": "このページのストレージにアクセスできません（例：システムページや新しいタブ）。",
+    "message": "No se puede acceder al almacenamiento de esta página (por ejemplo, páginas del sistema o pestañas nuevas).",
     "description": "Error message when storage access is denied."
   },
   "noCookies": {
-    "message": "クッキーが見つかりません。",
+    "message": "No se encontraron cookies.",
     "description": "Message when no cookies are found."
   },
   "errorLocalStorage": {
-    "message": "ローカルストレージにアクセスできませんでした。",
+    "message": "No se pudo acceder al almacenamiento local.",
     "description": "Error message when local storage is inaccessible."
   },
   "noLocalStorage": {
-    "message": "ローカルストレージアイテムが見つかりません。",
+    "message": "No se encontraron elementos de almacenamiento local.",
     "description": "Message when no local storage items are found."
   },
   "editButton": {
-    "message": "編集",
+    "message": "Editar",
     "description": "Title for the edit button."
   },
   "saveButton": {
-    "message": "保存",
+    "message": "Guardar",
     "description": "Title for the save button."
   },
   "deleteButton": {
-    "message": "削除",
+    "message": "Eliminar",
     "description": "Title for the delete button."
   },
   "fetchedAt": {
-    "message": "取得時刻：",
+    "message": "Obtenido a las:",
     "description": "Prefix for the time when data was fetched."
   },
   "showMore": {
-    "message": "もっと見る",
+    "message": "Mostrar más",
     "description": "Button text to expand a collapsed text area."
   },
             "showLess": {
-              "message": "少なく表示",
+              "message": "Mostrar menos",
               "description": "Button text to collapse an expanded text area."
             },
             "privacyNotice": {
-              "message": " | 本拡張機能は、いかなるデータも外部へ送信しません。",
+              "message": " | Los datos locales/cookies no se envían externamente.",
               "description": "Privacy notice text."
             }
           }

@@ -1,0 +1,157 @@
+diff --git a/1.3/_locales/en/messages.json b/1.4/_locales/en/messages.json
+index e82348d..30784b2 100644
+--- a/1.3/_locales/en/messages.json
++++ b/1.4/_locales/en/messages.json
+@@ -24,7 +24,7 @@
+     "description": "Title for the local storage section."
+   },
+   "footerText": {
+-    "message": "Made by JellyKing",
++    "message": "Made by JellyKingStudio",
+     "description": "Footer text."
+   },
+   "errorTabId": {
+@@ -76,7 +76,7 @@
+               "description": "Button text to collapse an expanded text area."
+             },
+             "privacyNotice": {
+-              "message": " | Local/cookie data is not sent externally.",
++              "message": " | This extension never transmits any data externally.",
+               "description": "Privacy notice text."
+             },
+             "copyButtonLabel": { "message": "Copy", "description": "Copy item button." },
+diff --git a/1.3/_locales/es/messages.json b/1.4/_locales/es/messages.json
+index 165c5c2..b594eab 100644
+--- a/1.3/_locales/es/messages.json
++++ b/1.4/_locales/es/messages.json
+@@ -24,7 +24,7 @@
+     "description": "Title for the local storage section."
+   },
+   "footerText": {
+-    "message": "Hecho por JellyKing",
++    "message": "Hecho por JellyKingStudio",
+     "description": "Footer text."
+   },
+   "errorTabId": {
+@@ -76,7 +76,7 @@
+               "description": "Button text to collapse an expanded text area."
+             },
+             "privacyNotice": {
+-              "message": " | Los datos locales/cookies no se envían externamente.",
++              "message": " | Esta extensión no envía ningún dato al exterior.",
+               "description": "Privacy notice text."
+             }
+-          }
+\ No newline at end of file
++          }
+diff --git a/1.3/_locales/ja/messages.json b/1.4/_locales/ja/messages.json
+index 2ada3f6..8eeb662 100644
+--- a/1.3/_locales/ja/messages.json
++++ b/1.4/_locales/ja/messages.json
+@@ -24,7 +24,7 @@
+     "description": "Title for the local storage section."
+   },
+   "footerText": {
+-    "message": "JellyKing作成",
++    "message": "JellyKingStudio作成",
+     "description": "Footer text."
+   },
+   "errorTabId": {
+@@ -76,7 +76,7 @@
+               "description": "Button text to collapse an expanded text area."
+             },
+             "privacyNotice": {
+-              "message": " | ローカル/Cookieデータは外部に送信されません。",
++              "message": " | 本拡張機能は、いかなるデータも外部へ送信しません。",
+               "description": "Privacy notice text."
+             }
+-          }
+\ No newline at end of file
++          }
+diff --git a/1.3/_locales/ko/messages.json b/1.4/_locales/ko/messages.json
+index d1986d8..8cb7cc6 100644
+--- a/1.3/_locales/ko/messages.json
++++ b/1.4/_locales/ko/messages.json
+@@ -24,7 +24,7 @@
+     "description": "로컬 스토리지 섹션의 제목입니다."
+   },
+   "footerText": {
+-    "message": "Made by JellyKing",
++    "message": "Made by JellyKingStudio",
+     "description": "하단 푸터 텍스트입니다."
+   },
+   "errorTabId": {
+@@ -76,7 +76,7 @@
+     "description": "Button text to collapse an expanded text area."
+   },
+   "privacyNotice": {
+-    "message": " | 로컬/쿠키 데이터는 외부로 전송하지 않습니다.",
++    "message": " | 그 어떤 데이터도 외부로 전송하지 않습니다.",
+     "description": "개인 정보 보호 고지 텍스트입니다."
+   },
+   "copyButtonLabel": { "message": "복사", "description": "항목 복사 버튼입니다." },
+diff --git a/1.3/_locales/ru/messages.json b/1.4/_locales/ru/messages.json
+index 7b37dc0..5837ea8 100644
+--- a/1.3/_locales/ru/messages.json
++++ b/1.4/_locales/ru/messages.json
+@@ -24,7 +24,7 @@
+     "description": "Title for the local storage section."
+   },
+   "footerText": {
+-    "message": "Сделано JellyKing",
++    "message": "Сделано JellyKingStudio",
+     "description": "Footer text."
+   },
+   "errorTabId": {
+@@ -76,7 +76,7 @@
+             "description": "Button text to collapse an expanded text area."
+           },
+           "privacyNotice": {
+-            "message": " | Локальные данные/файлы cookie не отправляются извне.",
++            "message": " | Это расширение не передаёт никакие данные внешним сервисам.",
+             "description": "Privacy notice text."
+           }
+-        }
+\ No newline at end of file
++        }
+diff --git a/1.3/_locales/zh_CN/messages.json b/1.4/_locales/zh_CN/messages.json
+index a89f8c0..b418874 100644
+--- a/1.3/_locales/zh_CN/messages.json
++++ b/1.4/_locales/zh_CN/messages.json
+@@ -24,7 +24,7 @@
+     "description": "Title for the local storage section."
+   },
+   "footerText": {
+-    "message": "由 JellyKing 制作",
++    "message": "由 JellyKingStudio 制作",
+     "description": "Footer text."
+   },
+   "errorTabId": {
+@@ -76,7 +76,7 @@
+               "description": "Button text to collapse an expanded text area."
+             },
+             "privacyNotice": {
+-              "message": " | 本地/Cookie数据不会发送到外部。",
++              "message": " | 本扩展不会向外部发送任何数据。",
+               "description": "Privacy notice text."
+             }
+-          }
+\ No newline at end of file
++          }
+diff --git a/1.3/manifest.json b/1.4/manifest.json
+index 00aea90..5de7418 100644
+--- a/1.3/manifest.json
++++ b/1.4/manifest.json
+@@ -1,10 +1,10 @@
+ {
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+-  "version": "1.3",
++  "version": "1.4",
+   "description": "__MSG_extDescription__",
+   "default_locale": "en",
+-  "author": "JellyKing",
++  "author": "JellyKingStudio",
+   "permissions": [
+     "activeTab",
+     "browsingData",

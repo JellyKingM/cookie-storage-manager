@@ -1,58 +1,58 @@
 {
   "extName": {
-    "message": "クッキーストレージマネージャー",
+    "message": "Cookie 存储管理器",
     "description": "The name of the extension."
   },
   "extDescription": {
-    "message": "現在のページのCookieとローカルストレージを管理するシンプルなマネージャーです。",
+    "message": "一个简单的当前页面 Cookie 和本地存储管理器。",
     "description": "The description of the extension."
   },
   "sponsorLink": {
-    "message": "サポート",
+    "message": "支持我",
     "description": "Sponsor link text."
   },
   "searchPlaceholder": {
-    "message": "キーまたは値で検索...",
+    "message": "按键或值搜索...",
     "description": "Placeholder for the search box."
   },
   "cookiesTitle": {
-    "message": "クッキー",
+    "message": "Cookie",
     "description": "Title for the cookies section."
   },
   "localStorageTitle": {
-    "message": "ローカルストレージ",
+    "message": "本地存储",
     "description": "Title for the local storage section."
   },
   "footerText": {
-    "message": "JellyKingStudio作成",
+    "message": "由 JellyKing 制作",
     "description": "Footer text."
   },
   "errorTabId": {
-    "message": "タブIDが見つかりません。このウィンドウを閉じて、拡張機能アイコンをもう一度クリックしてください。",
+    "message": "未找到标签页 ID。请关闭此窗口并再次单击扩展程序图标。",
     "description": "Error message when tab ID is not found."
   },
   "errorTabInfo": {
-    "message": "タブ情報を取得できませんでした。元のタブが閉じられた可能性があります。",
+    "message": "无法获取标签页信息。原始标签页可能已关闭。",
     "description": "Error message when tab info cannot be retrieved."
   },
   "errorAccess": {
-    "message": "このページのストレージにアクセスできません（例：システムページや新しいタブ）。",
+    "message": "无法访问此页面的存储（例如，系统页面或新标签页）。",
     "description": "Error message when storage access is denied."
   },
   "noCookies": {
-    "message": "クッキーが見つかりません。",
+    "message": "未找到 Cookie。",
     "description": "Message when no cookies are found."
   },
   "errorLocalStorage": {
-    "message": "ローカルストレージにアクセスできませんでした。",
+    "message": "无法访问本地存储。",
     "description": "Error message when local storage is inaccessible."
   },
   "noLocalStorage": {
-    "message": "ローカルストレージアイテムが見つかりません。",
+    "message": "未找到本地存储项。",
     "description": "Message when no local storage items are found."
   },
   "editButton": {
-    "message": "編集",
+    "message": "编辑",
     "description": "Title for the edit button."
   },
   "saveButton": {
@@ -60,23 +60,23 @@
     "description": "Title for the save button."
   },
   "deleteButton": {
-    "message": "削除",
+    "message": "删除",
     "description": "Title for the delete button."
   },
   "fetchedAt": {
-    "message": "取得時刻：",
+    "message": "获取时间：",
     "description": "Prefix for the time when data was fetched."
   },
   "showMore": {
-    "message": "もっと見る",
+    "message": "显示更多",
     "description": "Button text to expand a collapsed text area."
   },
             "showLess": {
-              "message": "少なく表示",
+              "message": "显示更少",
               "description": "Button text to collapse an expanded text area."
             },
             "privacyNotice": {
-              "message": " | 本拡張機能は、いかなるデータも外部へ送信しません。",
+              "message": " | 本地/Cookie数据不会发送到外部。",
               "description": "Privacy notice text."
             }
           }

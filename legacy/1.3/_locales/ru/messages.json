@@ -24,7 +24,7 @@
     "description": "Title for the local storage section."
   },
   "footerText": {
-    "message": "Сделано JellyKingStudio",
+    "message": "Сделано JellyKing",
     "description": "Footer text."
   },
   "errorTabId": {
@@ -76,7 +76,7 @@
             "description": "Button text to collapse an expanded text area."
           },
           "privacyNotice": {
-            "message": " | Это расширение не передаёт никакие данные внешним сервисам.",
+            "message": " | Локальные данные/файлы cookie не отправляются извне.",
             "description": "Privacy notice text."
           }
         }

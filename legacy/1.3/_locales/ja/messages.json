@@ -24,7 +24,7 @@
     "description": "Title for the local storage section."
   },
   "footerText": {
-    "message": "JellyKingStudio作成",
+    "message": "JellyKing作成",
     "description": "Footer text."
   },
   "errorTabId": {
@@ -76,7 +76,7 @@
               "description": "Button text to collapse an expanded text area."
             },
             "privacyNotice": {
-              "message": " | 本拡張機能は、いかなるデータも外部へ送信しません。",
+              "message": " | ローカル/Cookieデータは外部に送信されません。",
               "description": "Privacy notice text."
             }
           }

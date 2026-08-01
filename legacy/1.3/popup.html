@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Storage Manager</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <header>
+        <div class="title" data-i18n="extName"></div>
+        <div id="tab-info">
+            <div id="tab-title"></div>
+            <a id="tab-url" href="#" target="_blank"></a>
+            <div id="fetch-time"></div>
+        </div>
+        <div class="header-actions">
+            <div class="language-selector-wrapper">
+                <select id="language-selector">
+                    <option value="en">English</option>
+                    <option value="ko">한국어</option>
+                    <option value="zh_CN">中文</option>
+                    <option value="ja">日本語</option>
+                    <option value="es">Español</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+            <a href="https://linktr.ee/jelly_king" target="_blank" class="sponsor-link" data-i18n="sponsorLink"></a>
+        </div>
+    </header>
+
+    <div class="search-wrapper">
+        <input type="search" id="search-box" data-i18n-placeholder="searchPlaceholder">
+    </div>
+
+    <main>
+        <div id="notification-banner"></div>
+        <div class="storage-workspace">
+            <div id="storage-tabs" class="storage-tabs" role="tablist" aria-label="Site data types"></div>
+            <section class="tab-panel" role="tabpanel">
+                <div class="panel-toolbar">
+                    <h2 id="active-section-title"></h2>
+                    <div id="section-actions"></div>
+                </div>
+                <div id="active-data-list" class="data-list"></div>
+            </section>
+        </div>
+      <div id="export-overlay">
+      <div class="panel">
+        <div class="spinner"></div>
+        <div data-i18n="exportInProgress">Exporting…</div>
+      </div>
+    </div>
+    <div id="toast" role="status" aria-live="polite"></div>
+  </main>
+
+    <footer>
+        <div class="footer-left">
+                            <span data-i18n="footerText"></span>
+                            <span class="privacy-notice" data-i18n="privacyNotice"></span>        </div>
+        <div class="footer-actions">
+            <button id="delete-site-data-btn" class="delete-site-data-btn" data-i18n="deleteSiteDataButton"></button>
+            <div class="version-info" id="version-display"></div>
+        </div>
+    </footer>
+
+    <script src="popup.js"></script>
+</body>
+</html>

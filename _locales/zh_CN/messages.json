@@ -24,7 +24,7 @@
     "description": "Title for the local storage section."
   },
   "footerText": {
-    "message": "由 JellyKing 制作",
+    "message": "由 JellyKingStudio 制作",
     "description": "Footer text."
   },
   "errorTabId": {
@@ -76,7 +76,7 @@
               "description": "Button text to collapse an expanded text area."
             },
             "privacyNotice": {
-              "message": " | 本地/Cookie数据不会发送到外部。",
+              "message": " | 本扩展不会向外部发送任何数据。",
               "description": "Privacy notice text."
             }
           }

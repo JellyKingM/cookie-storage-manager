@@ -24,7 +24,7 @@
     "description": "Title for the local storage section."
   },
   "footerText": {
-    "message": "Made by JellyKingStudio",
+    "message": "Made by JellyKing",
     "description": "Footer text."
   },
   "errorTabId": {
@@ -76,7 +76,7 @@
               "description": "Button text to collapse an expanded text area."
             },
             "privacyNotice": {
-              "message": " | This extension never transmits any data externally.",
+              "message": " | Local/cookie data is not sent externally.",
               "description": "Privacy notice text."
             },
             "copyButtonLabel": { "message": "Copy", "description": "Copy item button." },
