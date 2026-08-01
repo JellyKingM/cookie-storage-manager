@@ -1,10 +1,10 @@
 {
   "extName": {
-    "message": "Менеджер хранилища cookie",
+    "message": "Менеджер Хранилища Cookie",
     "description": "The name of the extension."
   },
   "extDescription": {
-    "message": "Управляет cookie, веб-хранилищем, IndexedDB, кэшем, сервис-воркерами и другими данными текущего сайта.",
+    "message": "Простой менеджер для cookie и локального хранилища на текущей странице.",
     "description": "The description of the extension."
   },
   "sponsorLink": {
@@ -92,7 +92,7 @@
           "confirmDeleteAllCookies": { "message": "Удалить все показанные cookie? Это действие нельзя отменить.", "description": "Подтверждение удаления cookie." },
           "confirmDeleteAllLS": { "message": "Очистить всё локальное хранилище этого источника? Это действие нельзя отменить.", "description": "Подтверждение очистки локального хранилища." },
           "deleteAllComplete": { "message": "Все элементы удалены", "description": "Сообщение о завершении удаления." },
-          "deleteAllPartial": { "message": "Количество неудалённых элементов: $1.", "description": "Ошибка частичного удаления." },
+          "deleteAllPartial": { "message": "Не удалось удалить элементов: $1.", "description": "Ошибка частичного удаления." },
           "deleteFailed": { "message": "Не удалось удалить", "description": "Префикс ошибки удаления." },
           "tooltipHttpOnlyWarning": { "message": "Скрипты страницы не могут изменять cookie HttpOnly, но это расширение может удалять их через API cookie браузера.", "description": "Информация о HttpOnly." },
           "sessionStorageTitle": { "message": "Сеансовое хранилище", "description": "Вкладка сеансового хранилища." },

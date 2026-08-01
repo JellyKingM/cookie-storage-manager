@@ -1,10 +1,10 @@
 {
   "extName": {
-    "message": "Cookie ストレージマネージャー",
+    "message": "クッキーストレージマネージャー",
     "description": "The name of the extension."
   },
   "extDescription": {
-    "message": "現在のページの Cookie、ウェブストレージ、IndexedDB、キャッシュ、サービスワーカーなどのサイトデータを管理します。",
+    "message": "現在のページのCookieとローカルストレージを管理するシンプルなマネージャーです。",
     "description": "The description of the extension."
   },
   "sponsorLink": {
@@ -16,7 +16,7 @@
     "description": "Placeholder for the search box."
   },
   "cookiesTitle": {
-    "message": "Cookie",
+    "message": "クッキー",
     "description": "Title for the cookies section."
   },
   "localStorageTitle": {
@@ -24,7 +24,7 @@
     "description": "Title for the local storage section."
   },
   "footerText": {
-    "message": "JellyKingStudio 制作",
+    "message": "JellyKingStudio作成",
     "description": "Footer text."
   },
   "errorTabId": {
@@ -40,7 +40,7 @@
     "description": "Error message when storage access is denied."
   },
   "noCookies": {
-    "message": "Cookieが見つかりません。",
+    "message": "クッキーが見つかりません。",
     "description": "Message when no cookies are found."
   },
   "errorLocalStorage": {
@@ -72,7 +72,7 @@
     "description": "Button text to expand a collapsed text area."
   },
             "showLess": {
-              "message": "折りたたむ",
+              "message": "少なく表示",
               "description": "Button text to collapse an expanded text area."
             },
             "privacyNotice": {
@@ -96,14 +96,14 @@
             "deleteFailed": { "message": "削除に失敗しました", "description": "削除エラーです。" },
             "tooltipHttpOnlyWarning": { "message": "HttpOnly Cookieはページスクリプトから編集できませんが、本拡張機能はブラウザのCookie APIを使用して削除できます。", "description": "HttpOnlyの説明です。" },
             "sessionStorageTitle": { "message": "セッションストレージ", "description": "セッションストレージタブです。" },
-            "indexedDBTitle": { "message": "IndexedDB", "description": "IndexedDBのタブです。" },
+            "indexedDBTitle": { "message": "インデックス付きデータベース", "description": "インデックス付きデータベースのタブです。" },
             "cacheStorageTitle": { "message": "キャッシュストレージ", "description": "キャッシュストレージタブです。" },
             "serviceWorkersTitle": { "message": "サービスワーカー", "description": "サービスワーカータブです。" },
             "fileSystemTitle": { "message": "ファイルシステム", "description": "オリジン専用ファイルシステムタブです。" },
             "storageOverviewTitle": { "message": "概要", "description": "ストレージ概要タブです。" },
             "errorsTitle": { "message": "エラー", "description": "収集エラータブです。" },
             "noSessionStorage": { "message": "セッションストレージの項目はありません。", "description": "空のセッションストレージメッセージです。" },
-            "noIndexedDB": { "message": "IndexedDBデータベースはありません。", "description": "IndexedDBが空の場合のメッセージです。" },
+            "noIndexedDB": { "message": "インデックス付きデータベースはありません。", "description": "データベースが空の場合のメッセージです。" },
             "noCacheStorage": { "message": "キャッシュストレージの項目はありません。", "description": "空のキャッシュメッセージです。" },
             "noServiceWorkers": { "message": "サービスワーカーはありません。", "description": "空のサービスワーカーメッセージです。" },
             "noFileSystem": { "message": "オリジン専用ファイルはありません。", "description": "空のファイルシステムメッセージです。" },
@@ -111,7 +111,7 @@
             "noErrors": { "message": "データ収集エラーはありません。", "description": "エラーなしメッセージです。" },
             "confirmDeleteSection": { "message": "このタブに表示された$1のデータをすべて削除しますか？この操作は元に戻せません。", "description": "セクション削除の確認です。" },
             "deleteSiteDataButton": { "message": "サイトデータをすべて削除", "description": "サイトデータ一括削除ボタンです。" },
-            "confirmDeleteSiteData": { "message": "このサイトのCookie、ウェブストレージ、IndexedDB、キャッシュ、サービスワーカー、専用ファイルをすべて削除しますか？ページが再読み込みされ、この操作は元に戻せません。", "description": "サイトデータ一括削除の確認です。" },
+            "confirmDeleteSiteData": { "message": "このサイトのCookie、Webストレージ、インデックス付きデータベース、キャッシュ、サービスワーカー、専用ファイルをすべて削除しますか？ページが再読み込みされ、この操作は元に戻せません。", "description": "サイトデータ一括削除の確認です。" },
             "siteDataDeleted": { "message": "削除可能なサイトデータをすべて削除しました。ページを再読み込みします。", "description": "一括削除完了メッセージです。" },
             "saveFailed": { "message": "保存に失敗しました", "description": "保存エラーです。" }
           }

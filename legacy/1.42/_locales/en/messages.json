@@ -4,7 +4,7 @@
     "description": "The name of the extension."
   },
   "extDescription": {
-    "message": "Manage cookies, web storage, IndexedDB, caches, service workers, and other site data for the current page.",
+    "message": "A simple manager for cookies and local storage on the current page.",
     "description": "The description of the extension."
   },
   "sponsorLink": {
