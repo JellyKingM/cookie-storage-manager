@@ -1,0 +1,117 @@
+{
+  "extName": {
+    "message": "Cookie 存储管理器",
+    "description": "The name of the extension."
+  },
+  "extDescription": {
+    "message": "管理当前页面的 Cookie、Web 存储、IndexedDB、缓存、Service Worker 及其他网站数据。",
+    "description": "The description of the extension."
+  },
+  "sponsorLink": {
+    "message": "支持我",
+    "description": "Sponsor link text."
+  },
+  "searchPlaceholder": {
+    "message": "按键名或值搜索…",
+    "description": "Placeholder for the search box."
+  },
+  "cookiesTitle": {
+    "message": "Cookie",
+    "description": "Title for the cookies section."
+  },
+  "localStorageTitle": {
+    "message": "本地存储",
+    "description": "Title for the local storage section."
+  },
+  "footerText": {
+    "message": "由 JellyKingStudio 制作",
+    "description": "Footer text."
+  },
+  "errorTabId": {
+    "message": "未找到标签页 ID。请关闭此窗口并再次单击扩展程序图标。",
+    "description": "Error message when tab ID is not found."
+  },
+  "errorTabInfo": {
+    "message": "无法获取标签页信息。原始标签页可能已关闭。",
+    "description": "Error message when tab info cannot be retrieved."
+  },
+  "errorAccess": {
+    "message": "无法访问此页面的存储（例如，系统页面或新标签页）。",
+    "description": "Error message when storage access is denied."
+  },
+  "noCookies": {
+    "message": "未找到 Cookie。",
+    "description": "Message when no cookies are found."
+  },
+  "errorLocalStorage": {
+    "message": "无法访问本地存储。",
+    "description": "Error message when local storage is inaccessible."
+  },
+  "noLocalStorage": {
+    "message": "未找到本地存储项。",
+    "description": "Message when no local storage items are found."
+  },
+  "editButton": {
+    "message": "编辑",
+    "description": "Title for the edit button."
+  },
+  "saveButton": {
+    "message": "保存",
+    "description": "Title for the save button."
+  },
+  "deleteButton": {
+    "message": "删除",
+    "description": "Title for the delete button."
+  },
+  "fetchedAt": {
+    "message": "获取时间：",
+    "description": "Prefix for the time when data was fetched."
+  },
+  "showMore": {
+    "message": "显示更多",
+    "description": "Button text to expand a collapsed text area."
+  },
+            "showLess": {
+              "message": "收起",
+              "description": "Button text to collapse an expanded text area."
+            },
+            "privacyNotice": {
+              "message": " | 本扩展不会向外部发送任何数据。",
+              "description": "Privacy notice text."
+            },
+            "copyButtonLabel": { "message": "复制", "description": "复制按钮。" },
+            "saveButtonLabel": { "message": "导出", "description": "导出按钮。" },
+            "copiedToast": { "message": "已复制到剪贴板", "description": "复制完成提示。" },
+            "savedToast": { "message": "已保存为文件", "description": "导出完成提示。" },
+            "exportAllButtonLabel": { "message": "全部导出", "description": "全部导出按钮。" },
+            "exportAllCookiesTitle": { "message": "导出所有 Cookie", "description": "Cookie 导出提示。" },
+            "exportAllLSTitle": { "message": "导出所有本地存储数据", "description": "本地存储导出提示。" },
+            "deleteAllButtonLabel": { "message": "全部删除", "description": "全部删除按钮。" },
+            "deleteAllCookiesTitle": { "message": "删除此网站显示的所有 Cookie", "description": "Cookie 全部删除提示。" },
+            "deleteAllLSTitle": { "message": "清除此来源的本地存储", "description": "本地存储全部删除提示。" },
+            "confirmDeleteAllCookies": { "message": "要删除显示的所有 Cookie 吗？此操作无法撤销。", "description": "Cookie 删除确认。" },
+            "confirmDeleteAllLS": { "message": "要清除此来源的所有本地存储数据吗？此操作无法撤销。", "description": "本地存储清除确认。" },
+            "deleteAllComplete": { "message": "已删除所有项目", "description": "全部删除完成提示。" },
+            "deleteAllPartial": { "message": "有 $1 个项目无法删除。", "description": "部分删除失败提示。" },
+            "deleteFailed": { "message": "删除失败", "description": "删除错误提示。" },
+            "tooltipHttpOnlyWarning": { "message": "页面脚本无法编辑 HttpOnly Cookie，但本扩展可以通过浏览器 Cookie API 删除它们。", "description": "HttpOnly 说明。" },
+            "sessionStorageTitle": { "message": "会话存储", "description": "会话存储标签页。" },
+            "indexedDBTitle": { "message": "IndexedDB", "description": "IndexedDB 标签页。" },
+            "cacheStorageTitle": { "message": "缓存存储", "description": "缓存存储标签页。" },
+            "serviceWorkersTitle": { "message": "Service Worker", "description": "Service Worker 标签页。" },
+            "fileSystemTitle": { "message": "文件系统", "description": "来源专用文件系统标签页。" },
+            "storageOverviewTitle": { "message": "概览", "description": "存储概览标签页。" },
+            "errorsTitle": { "message": "错误", "description": "数据收集错误标签页。" },
+            "noSessionStorage": { "message": "未找到会话存储项目。", "description": "会话存储为空时的提示。" },
+            "noIndexedDB": { "message": "未找到 IndexedDB 数据库。", "description": "IndexedDB 为空时的提示。" },
+            "noCacheStorage": { "message": "未找到缓存存储项目。", "description": "缓存存储为空时的提示。" },
+            "noServiceWorkers": { "message": "未找到 Service Worker。", "description": "Service Worker 为空时的提示。" },
+            "noFileSystem": { "message": "未找到源专用文件。", "description": "文件系统为空时的提示。" },
+            "noStorageOverview": { "message": "无法获取存储使用信息。", "description": "存储概览不可用时的提示。" },
+            "noErrors": { "message": "没有数据收集错误。", "description": "无错误提示。" },
+            "confirmDeleteSection": { "message": "要删除此标签页中显示的所有“$1”数据吗？此操作无法撤销。", "description": "分区清除确认。" },
+            "deleteSiteDataButton": { "message": "删除所有网站数据", "description": "网站数据全部删除按钮。" },
+            "confirmDeleteSiteData": { "message": "要删除此网站的 Cookie、Web 存储、IndexedDB、缓存、Service Worker 和专用文件吗？页面将重新加载，且此操作无法撤销。", "description": "网站数据全部删除确认。" },
+            "siteDataDeleted": { "message": "已删除所有可用的网站数据。页面正在重新加载。", "description": "全部删除完成提示。" },
+            "saveFailed": { "message": "保存失败", "description": "保存错误提示。" }
+          }

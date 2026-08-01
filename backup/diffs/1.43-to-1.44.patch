@@ -1,0 +1,204 @@
+diff --git a/1.43/manifest.json b/1.44/manifest.json
+index 87e9a82..f4c7f49 100644
+--- a/1.43/manifest.json
++++ b/1.44/manifest.json
+@@ -1,7 +1,7 @@
+ {
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+-  "version": "1.43",
++  "version": "1.44",
+   "description": "__MSG_extDescription__",
+   "default_locale": "en",
+   "author": "JellyKingStudio",
+diff --git a/1.43/popup.css b/1.44/popup.css
+index 68f8814..27134c4 100644
+--- a/1.43/popup.css
++++ b/1.44/popup.css
+@@ -1,4 +1,5 @@
+ html, body {
++    color-scheme: light dark;
+     height: 100%;
+     margin: 0;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+@@ -519,3 +520,180 @@ footer {
+   animation: spin .8s linear infinite;
+ }
+ @keyframes spin { to { transform: rotate(360deg); } }
++
++/* Follow the browser/operating-system dark color preference automatically. */
++@media (prefers-color-scheme: dark) {
++  html, body {
++    background-color: #111318;
++    color: #e7eaf0;
++  }
++
++  header {
++    border-bottom-color: #343944;
++  }
++
++  #tab-info,
++  #fetch-time,
++  footer {
++    color: #aeb6c4;
++  }
++
++  #tab-url,
++  .sponsor-link,
++  .show-more-btn {
++    color: #75a7ff;
++  }
++
++  #search-box,
++  #language-selector {
++    color: #e7eaf0;
++    background-color: #1b1f27;
++    border-color: #444b58;
++  }
++
++  #search-box::placeholder {
++    color: #858e9e;
++  }
++
++  .storage-tabs {
++    border-bottom-color: #3b424f;
++  }
++
++  .storage-tab {
++    color: #aeb6c4;
++  }
++
++  .storage-tab:hover {
++    color: #f0f3f8;
++    background: #242933;
++  }
++
++  .storage-tab.active {
++    color: #8cb4ff;
++    background: #181b22;
++    border-color: #3b424f;
++  }
++
++  .tab-count {
++    color: #c3cad5;
++    background: #303642;
++  }
++
++  .storage-tab.active .tab-count {
++    color: #a8c7ff;
++    background: #263b63;
++  }
++
++  main h2 {
++    color: #d8dde7;
++  }
++
++  .section-action,
++  .action-btn {
++    color: #dce1ea;
++    background: #252a33;
++    border-color: #49515f;
++  }
++
++  .section-action:hover:not(:disabled),
++  .action-btn:hover:not(:disabled) {
++    background: #333946;
++  }
++
++  .section-action.danger,
++  .danger-btn {
++    color: #ffb4ac;
++    background: #3a2022;
++    border-color: #7a3d40;
++  }
++
++  .section-action.danger:hover:not(:disabled),
++  .danger-btn:hover:not(:disabled) {
++    background: #4b282b;
++  }
++
++  .data-list {
++    background-color: #181b22;
++    border-color: #3b424f;
++  }
++
++  .data-item {
++    color: #e3e7ee;
++    background-color: #181b22;
++    border-bottom-color: #303641;
++  }
++
++  .data-item:nth-child(even) {
++    background-color: #1d2129;
++  }
++
++  .data-value {
++    color: #c7ced9;
++    background-color: #252a33;
++  }
++
++  .data-value.editing {
++    outline-color: #75a7ff;
++  }
++
++  .show-more-btn {
++    background: linear-gradient(to right, transparent, #252a33 50%);
++  }
++
++  .data-value.expanded .show-more-btn {
++    background: #252a33;
++  }
++
++  .empty-state {
++    color: #8f98a8;
++  }
++
++  #notification-banner.info {
++    color: #b9dcff;
++    background-color: #183047;
++    border-color: #285270;
++  }
++
++  #notification-banner.error {
++    color: #ffc7c2;
++    background-color: #421f23;
++    border-color: #74373d;
++  }
++
++  #toast {
++    color: #f5f7fa;
++    background: rgba(32, 36, 45, .96);
++    border: 1px solid #4b5361;
++  }
++
++  #export-overlay {
++    background: rgba(9, 11, 15, .72);
++  }
++
++  #export-overlay .panel {
++    color: #e7eaf0;
++    background: #20242c;
++    border-color: #464e5c;
++    box-shadow: 0 4px 20px rgba(0, 0, 0, .45);
++  }
++
++  #export-overlay .spinner {
++    border-color: #555e6d;
++    border-top-color: #75a7ff;
++  }
++
++  #resizer {
++    background-color: #434a57;
++  }
++
++  .delete-site-data-btn {
++    color: #fff;
++    background: #c43227;
++    border-color: #e15349;
++    box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
++  }
++
++  .delete-site-data-btn:hover:not(:disabled) {
++    background: #a92b23;
++  }
++}

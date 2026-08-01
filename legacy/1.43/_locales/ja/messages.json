@@ -1,0 +1,117 @@
+{
+  "extName": {
+    "message": "Cookie ストレージマネージャー",
+    "description": "The name of the extension."
+  },
+  "extDescription": {
+    "message": "現在のページの Cookie、ウェブストレージ、IndexedDB、キャッシュ、サービスワーカーなどのサイトデータを管理します。",
+    "description": "The description of the extension."
+  },
+  "sponsorLink": {
+    "message": "サポート",
+    "description": "Sponsor link text."
+  },
+  "searchPlaceholder": {
+    "message": "キーまたは値で検索...",
+    "description": "Placeholder for the search box."
+  },
+  "cookiesTitle": {
+    "message": "Cookie",
+    "description": "Title for the cookies section."
+  },
+  "localStorageTitle": {
+    "message": "ローカルストレージ",
+    "description": "Title for the local storage section."
+  },
+  "footerText": {
+    "message": "JellyKingStudio 制作",
+    "description": "Footer text."
+  },
+  "errorTabId": {
+    "message": "タブIDが見つかりません。このウィンドウを閉じて、拡張機能アイコンをもう一度クリックしてください。",
+    "description": "Error message when tab ID is not found."
+  },
+  "errorTabInfo": {
+    "message": "タブ情報を取得できませんでした。元のタブが閉じられた可能性があります。",
+    "description": "Error message when tab info cannot be retrieved."
+  },
+  "errorAccess": {
+    "message": "このページのストレージにアクセスできません（例：システムページや新しいタブ）。",
+    "description": "Error message when storage access is denied."
+  },
+  "noCookies": {
+    "message": "Cookieが見つかりません。",
+    "description": "Message when no cookies are found."
+  },
+  "errorLocalStorage": {
+    "message": "ローカルストレージにアクセスできませんでした。",
+    "description": "Error message when local storage is inaccessible."
+  },
+  "noLocalStorage": {
+    "message": "ローカルストレージアイテムが見つかりません。",
+    "description": "Message when no local storage items are found."
+  },
+  "editButton": {
+    "message": "編集",
+    "description": "Title for the edit button."
+  },
+  "saveButton": {
+    "message": "保存",
+    "description": "Title for the save button."
+  },
+  "deleteButton": {
+    "message": "削除",
+    "description": "Title for the delete button."
+  },
+  "fetchedAt": {
+    "message": "取得時刻：",
+    "description": "Prefix for the time when data was fetched."
+  },
+  "showMore": {
+    "message": "もっと見る",
+    "description": "Button text to expand a collapsed text area."
+  },
+            "showLess": {
+              "message": "折りたたむ",
+              "description": "Button text to collapse an expanded text area."
+            },
+            "privacyNotice": {
+              "message": " | 本拡張機能は、いかなるデータも外部へ送信しません。",
+              "description": "Privacy notice text."
+            },
+            "copyButtonLabel": { "message": "コピー", "description": "コピーボタンです。" },
+            "saveButtonLabel": { "message": "エクスポート", "description": "エクスポートボタンです。" },
+            "copiedToast": { "message": "クリップボードにコピーしました", "description": "コピー完了メッセージです。" },
+            "savedToast": { "message": "ファイルとして保存しました", "description": "エクスポート完了メッセージです。" },
+            "exportAllButtonLabel": { "message": "すべてエクスポート", "description": "一括エクスポートボタンです。" },
+            "exportAllCookiesTitle": { "message": "すべてのCookieをエクスポート", "description": "Cookieエクスポートの説明です。" },
+            "exportAllLSTitle": { "message": "ローカルストレージをすべてエクスポート", "description": "ローカルストレージエクスポートの説明です。" },
+            "deleteAllButtonLabel": { "message": "すべて削除", "description": "一括削除ボタンです。" },
+            "deleteAllCookiesTitle": { "message": "このサイトに表示されたCookieをすべて削除", "description": "Cookie一括削除の説明です。" },
+            "deleteAllLSTitle": { "message": "このオリジンのローカルストレージを消去", "description": "ローカルストレージ一括削除の説明です。" },
+            "confirmDeleteAllCookies": { "message": "表示されたCookieをすべて削除しますか？この操作は元に戻せません。", "description": "Cookie一括削除の確認です。" },
+            "confirmDeleteAllLS": { "message": "このオリジンのローカルストレージをすべて消去しますか？この操作は元に戻せません。", "description": "ローカルストレージ削除の確認です。" },
+            "deleteAllComplete": { "message": "すべての項目を削除しました", "description": "一括削除完了メッセージです。" },
+            "deleteAllPartial": { "message": "$1件の項目を削除できませんでした。", "description": "一部削除失敗メッセージです。" },
+            "deleteFailed": { "message": "削除に失敗しました", "description": "削除エラーです。" },
+            "tooltipHttpOnlyWarning": { "message": "HttpOnly Cookieはページスクリプトから編集できませんが、本拡張機能はブラウザのCookie APIを使用して削除できます。", "description": "HttpOnlyの説明です。" },
+            "sessionStorageTitle": { "message": "セッションストレージ", "description": "セッションストレージタブです。" },
+            "indexedDBTitle": { "message": "IndexedDB", "description": "IndexedDBのタブです。" },
+            "cacheStorageTitle": { "message": "キャッシュストレージ", "description": "キャッシュストレージタブです。" },
+            "serviceWorkersTitle": { "message": "サービスワーカー", "description": "サービスワーカータブです。" },
+            "fileSystemTitle": { "message": "ファイルシステム", "description": "オリジン専用ファイルシステムタブです。" },
+            "storageOverviewTitle": { "message": "概要", "description": "ストレージ概要タブです。" },
+            "errorsTitle": { "message": "エラー", "description": "収集エラータブです。" },
+            "noSessionStorage": { "message": "セッションストレージの項目はありません。", "description": "空のセッションストレージメッセージです。" },
+            "noIndexedDB": { "message": "IndexedDBデータベースはありません。", "description": "IndexedDBが空の場合のメッセージです。" },
+            "noCacheStorage": { "message": "キャッシュストレージの項目はありません。", "description": "空のキャッシュメッセージです。" },
+            "noServiceWorkers": { "message": "サービスワーカーはありません。", "description": "空のサービスワーカーメッセージです。" },
+            "noFileSystem": { "message": "オリジン専用ファイルはありません。", "description": "空のファイルシステムメッセージです。" },
+            "noStorageOverview": { "message": "ストレージ使用状況を取得できません。", "description": "空の概要メッセージです。" },
+            "noErrors": { "message": "データ収集エラーはありません。", "description": "エラーなしメッセージです。" },
+            "confirmDeleteSection": { "message": "このタブに表示された$1のデータをすべて削除しますか？この操作は元に戻せません。", "description": "セクション削除の確認です。" },
+            "deleteSiteDataButton": { "message": "サイトデータをすべて削除", "description": "サイトデータ一括削除ボタンです。" },
+            "confirmDeleteSiteData": { "message": "このサイトのCookie、ウェブストレージ、IndexedDB、キャッシュ、サービスワーカー、専用ファイルをすべて削除しますか？ページが再読み込みされ、この操作は元に戻せません。", "description": "サイトデータ一括削除の確認です。" },
+            "siteDataDeleted": { "message": "削除可能なサイトデータをすべて削除しました。ページを再読み込みします。", "description": "一括削除完了メッセージです。" },
+            "saveFailed": { "message": "保存に失敗しました", "description": "保存エラーです。" }
+          }
