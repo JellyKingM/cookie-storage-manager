@@ -1,0 +1,70 @@
+{
+  "extName": {
+    "message": "쿠키 스토리지 관리자",
+    "description": "확장 프로그램의 이름입니다."
+  },
+  "extDescription": {
+    "message": "현재 페이지의 쿠키 및 로컬 스토리지를 간편하게 관리합니다.",
+    "description": "확장 프로그램의 설명입니다."
+  },
+  "sponsorLink": {
+    "message": "지원하기",
+    "description": "후원 링크 텍스트입니다."
+  },
+  "searchPlaceholder": {
+    "message": "키 또는 값으로 검색...",
+    "description": "검색창의 플레이스홀더입니다."
+  },
+  "cookiesTitle": {
+    "message": "쿠키",
+    "description": "쿠키 섹션의 제목입니다."
+  },
+  "localStorageTitle": {
+    "message": "로컬 스토리지",
+    "description": "로컬 스토리지 섹션의 제목입니다."
+  },
+  "footerText": {
+    "message": "Made by JellyKing",
+    "description": "하단 푸터 텍스트입니다."
+  },
+  "errorTabId": {
+    "message": "탭 ID를 찾을 수 없습니다. 이 창을 닫고 확장 프로그램 아이콘을 다시 클릭하세요.",
+    "description": "탭 ID를 찾을 수 없을 때의 오류 메시지입니다."
+  },
+  "errorTabInfo": {
+    "message": "탭 정보를 가져올 수 없습니다. 원래 탭이 닫혔을 수 있습니다.",
+    "description": "탭 정보를 가져올 수 없을 때의 오류 메시지입니다."
+  },
+  "errorAccess": {
+    "message": "이 페이지의 저장소에 접근할 수 없습니다 (예: 시스템 페이지 또는 새 탭).",
+    "description": "저장소 접근이 거부되었을 때의 오류 메시지입니다."
+  },
+  "noCookies": {
+    "message": "쿠키를 찾을 수 없습니다.",
+    "description": "쿠키가 없을 때의 메시지입니다."
+  },
+  "errorLocalStorage": {
+    "message": "로컬 스토리지에 접근할 수 없습니다.",
+    "description": "로컬 스토리지를 가져올 수 없을 때의 오류 메시지입니다."
+  },
+  "noLocalStorage": {
+    "message": "로컬 스토리지 항목을 찾을 수 없습니다.",
+    "description": "로컬 스토리지 항목이 없을 때의 메시지입니다."
+  },
+  "editButton": {
+    "message": "수정",
+    "description": "수정 버튼의 제목입니다."
+  },
+  "saveButton": {
+    "message": "저장",
+    "description": "저장 버튼의 제목입니다."
+  },
+  "deleteButton": {
+    "message": "삭제",
+    "description": "삭제 버튼의 제목입니다."
+  },
+  "fetchedAt": {
+    "message": "가져온 시간:",
+    "description": "데이터를 가져온 시간의 접두사입니다."
+  }
+}

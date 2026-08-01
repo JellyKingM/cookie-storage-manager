@@ -1,0 +1,381 @@
+diff --git a/1.1/_locales/en/messages.json b/1.2/_locales/en/messages.json
+index 43c1282..3b7f81a 100644
+--- a/1.1/_locales/en/messages.json
++++ b/1.2/_locales/en/messages.json
+@@ -78,5 +78,21 @@
+             "privacyNotice": {
+               "message": " | Local/cookie data is not sent externally.",
+               "description": "Privacy notice text."
+-            }
+-          }
+\ No newline at end of file
++            },
++            "copyButtonLabel": { "message": "Copy", "description": "Copy item button." },
++            "saveButtonLabel": { "message": "Export", "description": "Export item button." },
++            "copiedToast": { "message": "Copied to clipboard", "description": "Copy completion message." },
++            "savedToast": { "message": "Saved as file", "description": "Export completion message." },
++            "exportAllButtonLabel": { "message": "Export all", "description": "Export all button." },
++            "exportAllCookiesTitle": { "message": "Export all cookies", "description": "Cookie export tooltip." },
++            "exportAllLSTitle": { "message": "Export all local storage", "description": "Local storage export tooltip." },
++            "deleteAllButtonLabel": { "message": "Delete all", "description": "Delete all button." },
++            "deleteAllCookiesTitle": { "message": "Delete every cookie listed for this site", "description": "Cookie delete-all tooltip." },
++            "deleteAllLSTitle": { "message": "Clear local storage for this origin", "description": "Local storage delete-all tooltip." },
++            "confirmDeleteAllCookies": { "message": "Delete all listed cookies? This cannot be undone.", "description": "Cookie delete confirmation." },
++            "confirmDeleteAllLS": { "message": "Clear all local storage for this origin? This cannot be undone.", "description": "Local storage clear confirmation." },
++            "deleteAllComplete": { "message": "All items were deleted", "description": "Bulk deletion completion message." },
++            "deleteAllPartial": { "message": "$1 item(s) could not be deleted.", "description": "Partial bulk deletion error." },
++            "deleteFailed": { "message": "Deletion failed", "description": "Deletion error prefix." },
++            "tooltipHttpOnlyWarning": { "message": "HttpOnly cookies cannot be edited by page scripts, but this extension can delete them using the browser cookie API.", "description": "HttpOnly information." }
++          }
+diff --git a/1.1/_locales/ko/messages.json b/1.2/_locales/ko/messages.json
+index 5f32ad8..a57f0f5 100644
+--- a/1.1/_locales/ko/messages.json
++++ b/1.2/_locales/ko/messages.json
+@@ -78,5 +78,21 @@
+             "privacyNotice": {
+               "message": " | 로컬/쿠키 데이터는 외부로 전송하지 않습니다.",
+               "description": "개인 정보 보호 고지 텍스트입니다."
+-            }
+-          }
+\ No newline at end of file
++            },
++            "copyButtonLabel": { "message": "복사", "description": "항목 복사 버튼입니다." },
++            "saveButtonLabel": { "message": "내보내기", "description": "항목 내보내기 버튼입니다." },
++            "copiedToast": { "message": "클립보드에 복사했습니다", "description": "복사 완료 메시지입니다." },
++            "savedToast": { "message": "파일로 저장했습니다", "description": "내보내기 완료 메시지입니다." },
++            "exportAllButtonLabel": { "message": "전체 내보내기", "description": "전체 내보내기 버튼입니다." },
++            "exportAllCookiesTitle": { "message": "쿠키 전체 내보내기", "description": "쿠키 내보내기 설명입니다." },
++            "exportAllLSTitle": { "message": "로컬 스토리지 전체 내보내기", "description": "로컬 스토리지 내보내기 설명입니다." },
++            "deleteAllButtonLabel": { "message": "전체삭제", "description": "전체삭제 버튼입니다." },
++            "deleteAllCookiesTitle": { "message": "이 사이트에 표시된 쿠키 모두 삭제", "description": "쿠키 전체삭제 설명입니다." },
++            "deleteAllLSTitle": { "message": "현재 출처의 로컬 스토리지 모두 삭제", "description": "로컬 스토리지 전체삭제 설명입니다." },
++            "confirmDeleteAllCookies": { "message": "표시된 쿠키를 모두 삭제할까요? 되돌릴 수 없습니다.", "description": "쿠키 전체삭제 확인문입니다." },
++            "confirmDeleteAllLS": { "message": "현재 출처의 로컬 스토리지를 모두 삭제할까요? 되돌릴 수 없습니다.", "description": "로컬 스토리지 전체삭제 확인문입니다." },
++            "deleteAllComplete": { "message": "모든 항목을 삭제했습니다", "description": "전체삭제 완료 메시지입니다." },
++            "deleteAllPartial": { "message": "$1개 항목을 삭제하지 못했습니다.", "description": "일부 삭제 실패 메시지입니다." },
++            "deleteFailed": { "message": "삭제 실패", "description": "삭제 실패 메시지입니다." },
++            "tooltipHttpOnlyWarning": { "message": "HttpOnly 쿠키는 페이지 스크립트가 수정할 수 없지만 이 확장 프로그램은 브라우저 쿠키 API로 삭제할 수 있습니다.", "description": "HttpOnly 안내입니다." }
++          }
+diff --git a/1.1/manifest.json b/1.2/manifest.json
+index f94abcd..2f0a2e8 100644
+--- a/1.1/manifest.json
++++ b/1.2/manifest.json
+@@ -1,7 +1,7 @@
+ {
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+-  "version": "1.1",
++  "version": "1.2",
+   "description": "__MSG_extDescription__",
+   "default_locale": "en",
+   "author": "JellyKing",
+diff --git a/1.1/package.ps1 b/1.1/package.ps1
+deleted file mode 100644
+index 4839a21..0000000
+--- a/1.1/package.ps1
++++ /dev/null
+@@ -1,81 +0,0 @@
+-[CmdletBinding()]
+-param(
+-    [string]$OutputDirectory = (Join-Path $PSScriptRoot 'package')
+-)
+-
+-$ErrorActionPreference = 'Stop'
+-
+-$manifestPath = Join-Path $PSScriptRoot 'manifest.json'
+-$manifest = Get-Content -LiteralPath $manifestPath -Raw | ConvertFrom-Json
+-$version = $manifest.version
+-
+-if ([string]::IsNullOrWhiteSpace($version)) {
+-    throw 'The version is missing from manifest.json.'
+-}
+-
+-$requiredFiles = @(
+-    'manifest.json'
+-    'background.js'
+-    'content.js'
+-    'shared.js'
+-    'options.html'
+-    'options.js'
+-    'popup.html'
+-    'Icon.png'
+-)
+-
+-$requiredDirectories = @(
+-    '_locales'
+-)
+-
+-foreach ($relativePath in $requiredFiles) {
+-    $sourcePath = Join-Path $PSScriptRoot $relativePath
+-    if (-not (Test-Path -LiteralPath $sourcePath -PathType Leaf)) {
+-        throw "Required file is missing: $relativePath"
+-    }
+-}
+-
+-foreach ($relativePath in $requiredDirectories) {
+-    $sourcePath = Join-Path $PSScriptRoot $relativePath
+-    if (-not (Test-Path -LiteralPath $sourcePath -PathType Container)) {
+-        throw "Required directory is missing: $relativePath"
+-    }
+-}
+-
+-New-Item -ItemType Directory -Path $OutputDirectory -Force | Out-Null
+-$resolvedOutputDirectory = (Resolve-Path -LiteralPath $OutputDirectory).Path
+-$archivePath = Join-Path $resolvedOutputDirectory "InstagramVideoController-$version.zip"
+-$stagePath = Join-Path ([System.IO.Path]::GetTempPath()) "InstagramVideoController-$version-$([guid]::NewGuid())"
+-
+-try {
+-    New-Item -ItemType Directory -Path $stagePath | Out-Null
+-
+-    foreach ($relativePath in $requiredFiles) {
+-        Copy-Item -LiteralPath (Join-Path $PSScriptRoot $relativePath) -Destination $stagePath
+-    }
+-
+-    foreach ($relativePath in $requiredDirectories) {
+-        Copy-Item -LiteralPath (Join-Path $PSScriptRoot $relativePath) -Destination $stagePath -Recurse
+-    }
+-
+-    Compress-Archive -Path (Join-Path $stagePath '*') -DestinationPath $archivePath -Force
+-
+-    Add-Type -AssemblyName System.IO.Compression.FileSystem
+-    $archive = [System.IO.Compression.ZipFile]::OpenRead($archivePath)
+-    try {
+-        $manifestEntry = $archive.Entries | Where-Object { $_.FullName -eq 'manifest.json' }
+-        if (-not $manifestEntry) {
+-            throw 'manifest.json is not at the root of the archive.'
+-        }
+-    }
+-    finally {
+-        $archive.Dispose()
+-    }
+-}
+-finally {
+-    if (Test-Path -LiteralPath $stagePath) {
+-        Remove-Item -LiteralPath $stagePath -Recurse -Force
+-    }
+-}
+-
+-Write-Host "Package created: $archivePath"
+diff --git a/1.1/popup.css b/1.2/popup.css
+index 2778e1b..112a310 100644
+--- a/1.1/popup.css
++++ b/1.2/popup.css
+@@ -135,6 +135,20 @@ main h2 {
+     color: #555;
+ }
+ 
++main h2 .action-btn {
++    margin-left: 8px;
++}
++
++.danger-btn {
++    color: #b42318;
++    border-color: #f0b4ae;
++    background-color: #fff5f4;
++}
++
++.danger-btn:hover:not(:disabled) {
++    background-color: #fee4e2;
++}
++
+ .data-list {
+     border: 1px solid #ddd;
+     border-radius: 4px;
+@@ -351,4 +365,4 @@ footer {
+   border-radius: 50%;
+   animation: spin .8s linear infinite;
+ }
+-@keyframes spin { to { transform: rotate(360deg); } }
+\ No newline at end of file
++@keyframes spin { to { transform: rotate(360deg); } }
+diff --git a/1.1/popup.js b/1.2/popup.js
+index ad904d5..244fefd 100644
+--- a/1.1/popup.js
++++ b/1.2/popup.js
+@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
+     const messages = {};
+     let currentLang = 'en';
+     let activeTab;
++    let currentData = null;
+ 
+     const cookiesList = document.getElementById('cookies-list');
+     const localStorageList = document.getElementById('localstorage-list');
+@@ -115,6 +116,7 @@ document.addEventListener('DOMContentLoaded', async () => {
+         }
+ 
+         const { cookies, localStorage } = result[storageKey];
++        currentData = { cookies: cookies || [], localStorage: localStorage || {} };
+ 
+         // Handle Global Errors
+         if (localStorage?.__errorCode) {
+@@ -155,7 +157,7 @@ document.addEventListener('DOMContentLoaded', async () => {
+             renderList(localStorageList, lsItems, (item) => createDataItem(item, 'localStorage'));
+         }
+         
+-        addExportButtons(cookies, localStorage);
++        addSectionButtons(cookies, localStorage);
+         handleSearch();
+     }
+ 
+@@ -304,11 +306,10 @@ document.addEventListener('DOMContentLoaded', async () => {
+ 
+         if (type === 'cookie' && dataObject.httpOnly) {
+             editBtn.disabled = true;
+-            deleteBtn.disabled = true;
+         } else {
+             editBtn.addEventListener('click', () => toggleEditState(item, valueEl, editBtn));
+-            deleteBtn.addEventListener('click', () => handleDelete(dataObject.name, type, item));
+         }
++        deleteBtn.addEventListener('click', () => handleDelete(dataObject.name, type, item));
+ 
+         actionsEl.appendChild(copyBtn);
+         actionsEl.appendChild(saveBtn);
+@@ -421,24 +422,48 @@ document.addEventListener('DOMContentLoaded', async () => {
+         }
+     }
+ 
+-    function handleDelete(key, type, element) {
+-        if (type === 'cookie') {
+-            const originalData = element.dataObject;
++    function cookieRemovalUrl(cookie) {
++        const scheme = cookie.secure ? 'https://' : 'http://';
++        const host = (cookie.domain || new URL(activeTab.url).hostname).replace(/^\./, '');
++        const path = cookie.path && cookie.path.startsWith('/') ? cookie.path : '/';
++        return `${scheme}${host}${path}`;
++    }
++
++    function removeCookie(cookie) {
++        return new Promise(resolve => {
+             const cookieToRemove = {
+-                url: activeTab.url,
+-                name: key,
+-                storeId: originalData.storeId
++                url: cookieRemovalUrl(cookie),
++                name: cookie.name,
++                storeId: cookie.storeId
+             };
+-            if (originalData.partitionKey) {
+-                cookieToRemove.partitionKey = originalData.partitionKey;
+-            }
+-            chrome.cookies.remove(cookieToRemove, () => {
+-                if (!chrome.runtime.lastError) element.remove();
++            if (cookie.partitionKey) cookieToRemove.partitionKey = cookie.partitionKey;
++            chrome.cookies.remove(cookieToRemove, details => {
++                resolve({ ok: !chrome.runtime.lastError && !!details, error: chrome.runtime.lastError?.message });
+             });
++        });
++    }
++
++    async function handleDelete(key, type, element) {
++        if (type === 'cookie') {
++            const originalData = element.dataObject;
++            const result = await removeCookie(originalData);
++            if (result.ok) {
++                element.remove();
++                currentData.cookies = currentData.cookies.filter(cookie => cookie !== originalData);
++            } else {
++                showBanner(`${i18n.getMessage('deleteFailed')}: ${result.error || key}`, 'error');
++            }
+         } else if (type === 'localStorage') {
+             chrome.scripting.executeScript(
+                 { target: { tabId: activeTab.id }, func: (k) => localStorage.removeItem(k), args: [key] },
+-                () => { if (!chrome.runtime.lastError) element.remove(); }
++                () => {
++                    if (!chrome.runtime.lastError) {
++                        element.remove();
++                        delete currentData.localStorage[key];
++                    } else {
++                        showBanner(`${i18n.getMessage('deleteFailed')}: ${chrome.runtime.lastError.message}`, 'error');
++                    }
++                }
+             );
+         }
+     }
+@@ -448,7 +473,7 @@ document.addEventListener('DOMContentLoaded', async () => {
+     //     document.body.innerHTML = `<div style="padding: 10px; text-align: center; color: #555;">${message}</div>`;
+     // }
+ 
+-    function addExportButtons(cookies, localStorageObj) {
++    function addSectionButtons(cookies, localStorageObj) {
+       const host = activeTab ? new URL(activeTab.url).hostname : 'site';
+ 
+       const cookiesHeader = document.querySelector('#cookies-section h2');
+@@ -463,6 +488,28 @@ document.addEventListener('DOMContentLoaded', async () => {
+       };
+       if (cookiesHeader) cookiesHeader.appendChild(ckBtn);
+ 
++      const ckDeleteBtn = document.createElement('button');
++      ckDeleteBtn.className = 'action-btn danger-btn';
++      ckDeleteBtn.textContent = i18n.getMessage('deleteAllButtonLabel');
++      ckDeleteBtn.title = i18n.getMessage('deleteAllCookiesTitle');
++      ckDeleteBtn.disabled = !cookies?.length;
++      ckDeleteBtn.onclick = async () => {
++        if (!confirm(i18n.getMessage('confirmDeleteAllCookies'))) return;
++        ckDeleteBtn.disabled = true;
++        const results = await Promise.all(currentData.cookies.map(removeCookie));
++        const failed = results.filter(result => !result.ok).length;
++        if (failed) {
++          showBanner(i18n.getMessage('deleteAllPartial').replace('$1', String(failed)), 'error');
++          ckDeleteBtn.disabled = false;
++        } else {
++          currentData.cookies = [];
++          cookiesList.innerHTML = `<div class="data-item">${i18n.getMessage('noCookies')}</div>`;
++          showToast(i18n.getMessage('deleteAllComplete'));
++          handleSearch();
++        }
++      };
++      if (cookiesHeader) cookiesHeader.appendChild(ckDeleteBtn);
++
+       const lsHeader = document.querySelector('#localstorage-section h2');
+       const lsBtn = document.createElement('button');
+       lsBtn.className = 'action-btn';
+@@ -475,6 +522,31 @@ document.addEventListener('DOMContentLoaded', async () => {
+         downloadText(file, JSON.stringify(pairs, null, 2));
+       };
+       if (lsHeader) lsHeader.appendChild(lsBtn);
++
++      const lsDeleteBtn = document.createElement('button');
++      lsDeleteBtn.className = 'action-btn danger-btn';
++      lsDeleteBtn.textContent = i18n.getMessage('deleteAllButtonLabel');
++      lsDeleteBtn.title = i18n.getMessage('deleteAllLSTitle');
++      lsDeleteBtn.disabled = Object.keys(localStorageObj || {}).length === 0;
++      lsDeleteBtn.onclick = () => {
++        if (!confirm(i18n.getMessage('confirmDeleteAllLS'))) return;
++        lsDeleteBtn.disabled = true;
++        chrome.scripting.executeScript({
++          target: { tabId: activeTab.id },
++          func: () => localStorage.clear()
++        }, () => {
++          if (chrome.runtime.lastError) {
++            showBanner(`${i18n.getMessage('deleteFailed')}: ${chrome.runtime.lastError.message}`, 'error');
++            lsDeleteBtn.disabled = false;
++          } else {
++            currentData.localStorage = {};
++            localStorageList.innerHTML = `<div class="data-item">${i18n.getMessage('noLocalStorage')}</div>`;
++            showToast(i18n.getMessage('deleteAllComplete'));
++            handleSearch();
++          }
++        });
++      };
++      if (lsHeader) lsHeader.appendChild(lsDeleteBtn);
+     }
+ 
+     // --- 4. Initializer ---
+@@ -487,7 +559,16 @@ document.addEventListener('DOMContentLoaded', async () => {
+                 // Ensure messages for the selected language are loaded
+                 await loadMessages(); // Re-load all messages
+                 localizeHtmlPage(selectedLang);
+-                await loadDataFromStorage();
++                if (currentData) {
++                    const data = currentData;
++                    cookiesList.innerHTML = data.cookies.length ? '' : `<div class="data-item">${i18n.getMessage('noCookies')}</div>`;
++                    if (data.cookies.length) renderList(cookiesList, data.cookies, cookie => createDataItem(cookie, 'cookie'));
++                    const lsItems = Object.keys(data.localStorage).map(key => ({ name: key, value: data.localStorage[key] }));
++                    localStorageList.innerHTML = lsItems.length ? '' : `<div class="data-item">${i18n.getMessage('noLocalStorage')}</div>`;
++                    if (lsItems.length) renderList(localStorageList, lsItems, item => createDataItem(item, 'localStorage'));
++                    addSectionButtons(data.cookies, data.localStorage);
++                    handleSearch();
++                }
+             });
+         });
+ 

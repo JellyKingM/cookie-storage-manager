@@ -1,0 +1,82 @@
+{
+  "extName": {
+    "message": "Cookie Storage Manager",
+    "description": "The name of the extension."
+  },
+  "extDescription": {
+    "message": "A simple manager for cookies and local storage on the current page.",
+    "description": "The description of the extension."
+  },
+  "sponsorLink": {
+    "message": "Support Me",
+    "description": "Sponsor link text."
+  },
+  "searchPlaceholder": {
+    "message": "Search by key or value...",
+    "description": "Placeholder for the search box."
+  },
+  "cookiesTitle": {
+    "message": "Cookies",
+    "description": "Title for the cookies section."
+  },
+  "localStorageTitle": {
+    "message": "Local Storage",
+    "description": "Title for the local storage section."
+  },
+  "footerText": {
+    "message": "Made by JellyKing",
+    "description": "Footer text."
+  },
+  "errorTabId": {
+    "message": "Tab ID not found. Please close this window and click the extension icon again.",
+    "description": "Error message when tab ID is not found."
+  },
+  "errorTabInfo": {
+    "message": "Could not get tab information. The original tab may have been closed.",
+    "description": "Error message when tab info cannot be retrieved."
+  },
+  "errorAccess": {
+    "message": "Cannot access storage for this page (e.g., system pages or new tabs).",
+    "description": "Error message when storage access is denied."
+  },
+  "noCookies": {
+    "message": "No cookies found.",
+    "description": "Message when no cookies are found."
+  },
+  "errorLocalStorage": {
+    "message": "Could not access local storage.",
+    "description": "Error message when local storage is inaccessible."
+  },
+  "noLocalStorage": {
+    "message": "No local storage items found.",
+    "description": "Message when no local storage items are found."
+  },
+  "editButton": {
+    "message": "Edit",
+    "description": "Title for the edit button."
+  },
+  "saveButton": {
+    "message": "Save",
+    "description": "Title for the save button."
+  },
+  "deleteButton": {
+    "message": "Delete",
+    "description": "Title for the delete button."
+  },
+  "fetchedAt": {
+    "message": "Fetched at:",
+    "description": "Prefix for the time when data was fetched."
+  },
+  "showMore": {
+    "message": "Show more",
+    "description": "Button text to expand a collapsed text area."
+  },
+            "showLess": {
+              "message": "Show less",
+              "description": "Button text to collapse an expanded text area."
+            },
+            "privacyNotice": {
+              "message": " | Local/cookie data is not sent externally.",
+              "description": "Privacy notice text."
+            }
+          }

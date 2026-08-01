@@ -1,0 +1,70 @@
+{
+  "extName": {
+    "message": "Менеджер Хранилища Cookie",
+    "description": "The name of the extension."
+  },
+  "extDescription": {
+    "message": "Простой менеджер для cookie и локального хранилища на текущей странице.",
+    "description": "The description of the extension."
+  },
+  "sponsorLink": {
+    "message": "Поддержать меня",
+    "description": "Sponsor link text."
+  },
+  "searchPlaceholder": {
+    "message": "Поиск по ключу или значению...",
+    "description": "Placeholder for the search box."
+  },
+  "cookiesTitle": {
+    "message": "Cookie",
+    "description": "Title for the cookies section."
+  },
+  "localStorageTitle": {
+    "message": "Локальное Хранилище",
+    "description": "Title for the local storage section."
+  },
+  "footerText": {
+    "message": "Сделано JellyKing",
+    "description": "Footer text."
+  },
+  "errorTabId": {
+    "message": "ID вкладки не найден. Закройте это окно и снова щелкните значок расширения.",
+    "description": "Error message when tab ID is not found."
+  },
+  "errorTabInfo": {
+    "message": "Не удалось получить информацию о вкладке. Возможно, исходная вкладка была закрыта.",
+    "description": "Error message when tab info cannot be retrieved."
+  },
+  "errorAccess": {
+    "message": "Не удается получить доступ к хранилищу для этой страницы (например, системные страницы или новые вкладки).",
+    "description": "Error message when storage access is denied."
+  },
+  "noCookies": {
+    "message": "Cookie не найдены.",
+    "description": "Message when no cookies are found."
+  },
+  "errorLocalStorage": {
+    "message": "Не удалось получить доступ к локальному хранилищу.",
+    "description": "Error message when local storage is inaccessible."
+  },
+  "noLocalStorage": {
+    "message": "Элементы локального хранилища не найдены.",
+    "description": "Message when no local storage items are found."
+  },
+  "editButton": {
+    "message": "Редактировать",
+    "description": "Title for the edit button."
+  },
+  "saveButton": {
+    "message": "Сохранить",
+    "description": "Title for the save button."
+  },
+  "deleteButton": {
+    "message": "Удалить",
+    "description": "Title for the delete button."
+  },
+  "fetchedAt": {
+    "message": "Получено в:",
+    "description": "Prefix for the time when data was fetched."
+  }
+}

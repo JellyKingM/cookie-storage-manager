@@ -1,0 +1,226 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+.search-wrapper {
+    padding: 5px 0 10px;
+}
+
+#search-box {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#tab-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    flex-grow: 1; /* Allow it to take available space */
+}
+
+#tab-title {
+    font-weight: 600;
+    margin-bottom: 2px;
+    max-width: 100%; /* Ensure it doesn't overflow */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#tab-url {
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 2px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#tab-url:hover {
+    text-decoration: underline;
+}
+
+#fetch-time {
+    font-style: italic;
+    color: #888;
+}
+
+.sponsor-link {
+    font-size: 12px;
+    color: #007bff;
+    text-decoration: none;
+}
+.sponsor-link:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex-grow: 1; /* Allow main to fill available space */
+    display: flex;
+    min-height: 0; /* Important for flex-grow in a flex column */
+}
+
+.list-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px; /* Space between the two list sections */
+}
+
+.list-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+#cookies-section {
+    flex-basis: 47.5%;
+}
+
+#localstorage-section {
+    flex-basis: 52.5%;
+}
+
+#resizer {
+    width: 100%;
+    height: 8px; /* Height of the draggable bar */
+    background-color: #ccc;
+    cursor: ns-resize; /* North-south resize cursor */
+    margin: 5px 0; /* Space above and below the resizer */
+    border-radius: 4px;
+}
+
+main h2 {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+    color: #555;
+}
+
+.data-list {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow-y: auto;
+    background-color: #fff;
+    flex-grow: 1; /* Allow lists to grow */
+}
+
+.data-item {
+    display: flex;
+    align-items: flex-start; /* Align to top for long values */
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff; /* Default background */
+    flex-wrap: nowrap; /* Prevent wrapping of children */
+}
+
+.actions {
+    display: flex;
+    flex-shrink: 0; /* Prevent actions from shrinking */
+    margin-left: auto; /* Push actions to the right */
+    gap: 5px; /* Space between buttons */
+    align-items: center; /* Vertically align buttons */
+}
+
+.data-item.hidden {
+    display: none;
+}
+
+.data-item:nth-child(even) {
+    background-color: #f7f7f7; /* Lighter gray for even rows */
+}
+
+.data-item:last-child {
+    border-bottom: none;
+}
+
+.data-key {
+    font-weight: 600;
+    margin-right: 10px;
+    word-break: break-all;
+    flex-basis: 30%; /* Key takes up 30% of the item width */
+    flex-shrink: 0;
+}
+
+.data-value {
+    flex-grow: 1;
+    word-break: break-all;
+    color: #666;
+    background-color: #f3f3f3;
+    padding: 4px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    max-height: 5.4em; /* Approx 4 lines (1.35em line-height * 4) */
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.data-value.expanded {
+    max-height: none;
+}
+
+.data-value.collapsible::after {
+    content: 'Show more';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right, transparent, #f3f3f3 50%);
+    padding: 4px 6px 4px 20px;
+    font-size: 11px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.data-value.collapsible.expanded::after {
+    content: 'Show less';
+    background: #f3f3f3;
+}
+
+footer {
+    margin-top: 10px; /* Add margin above the footer */
+}
+
+.language-selector-wrapper {
+    margin-right: 10px; /* Add some space between the selector and the sponsor link */
+}
+
+#language-selector {
+    font-size: 12px;
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}

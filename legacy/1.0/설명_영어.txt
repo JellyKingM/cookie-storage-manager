@@ -1,0 +1,15 @@
+Easily manage cookies and local storage for the current page.
+
+A lightweight management tool that allows you to view, search, edit, and delete all cookie and local storage data on the current tab with a single click of the icon, without opening developer tools.
+
+● View a list of cookies & local storage at a glance
+● Real-time search by key or value
+● Easily edit and save values with a click
+● Delete individual items with a single button
+
+Works instantly without any setup.
+
+You can open it without clicking the icon using the Ctrl + Shift + Y shortcut.
+This shortcut can be changed in your browser's settings.
+
+● Support: https://linktr.ee/Jelly_King

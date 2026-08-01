@@ -1,0 +1,70 @@
+{
+  "extName": {
+    "message": "Cookie 存储管理器",
+    "description": "The name of the extension."
+  },
+  "extDescription": {
+    "message": "一个简单的当前页面 Cookie 和本地存储管理器。",
+    "description": "The description of the extension."
+  },
+  "sponsorLink": {
+    "message": "支持我",
+    "description": "Sponsor link text."
+  },
+  "searchPlaceholder": {
+    "message": "按键或值搜索...",
+    "description": "Placeholder for the search box."
+  },
+  "cookiesTitle": {
+    "message": "Cookie",
+    "description": "Title for the cookies section."
+  },
+  "localStorageTitle": {
+    "message": "本地存储",
+    "description": "Title for the local storage section."
+  },
+  "footerText": {
+    "message": "由 JellyKing 制作",
+    "description": "Footer text."
+  },
+  "errorTabId": {
+    "message": "未找到标签页 ID。请关闭此窗口并再次单击扩展程序图标。",
+    "description": "Error message when tab ID is not found."
+  },
+  "errorTabInfo": {
+    "message": "无法获取标签页信息。原始标签页可能已关闭。",
+    "description": "Error message when tab info cannot be retrieved."
+  },
+  "errorAccess": {
+    "message": "无法访问此页面的存储（例如，系统页面或新标签页）。",
+    "description": "Error message when storage access is denied."
+  },
+  "noCookies": {
+    "message": "未找到 Cookie。",
+    "description": "Message when no cookies are found."
+  },
+  "errorLocalStorage": {
+    "message": "无法访问本地存储。",
+    "description": "Error message when local storage is inaccessible."
+  },
+  "noLocalStorage": {
+    "message": "未找到本地存储项。",
+    "description": "Message when no local storage items are found."
+  },
+  "editButton": {
+    "message": "编辑",
+    "description": "Title for the edit button."
+  },
+  "saveButton": {
+    "message": "保存",
+    "description": "Title for the save button."
+  },
+  "deleteButton": {
+    "message": "删除",
+    "description": "Title for the delete button."
+  },
+  "fetchedAt": {
+    "message": "获取时间：",
+    "description": "Prefix for the time when data was fetched."
+  }
+}

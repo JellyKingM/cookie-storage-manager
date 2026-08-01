@@ -1,0 +1,15 @@
+Administre fácilmente las cookies y el almacenamiento local de la página actual.
+
+Una herramienta de administración liviana que le permite ver, buscar, editar y eliminar todas las cookies y los datos de almacenamiento local en la pestaña actual con un solo clic en el ícono, sin abrir las herramientas de desarrollador.
+
+● Vea una lista de cookies y almacenamiento local de un vistazo
+● Búsqueda en tiempo real por clave o valor
+● Edite y guarde valores fácilmente con un clic
+● Elimine elementos individuales con un solo botón
+
+Funciona al instante sin ninguna configuración.
+
+Puede abrirlo sin hacer clic en el icono usando el atajo Ctrl + Shift + Y.
+Este atajo se puede cambiar en la configuración de su navegador.
+
+● Apoyo : https://linktr.ee/Jelly_King
